@@ -1,0 +1,131 @@
+{
+  "announcement": "FREE SHIPPING WORLDWIDE ON ALL ORDERS ✨",
+  "logo": "/logo.svg",
+  "menus": [
+    {
+      "label": "Our Story",
+      "href": "/our-story"
+    },
+    {
+      "label": "Reviews",
+      "href": "/reviews"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Customization",
+      "href": "/customization"
+    },
+    {
+      "label": "Trade Program",
+      "href": "/trade-program"
+    },
+    {
+      "label": "Wholesale Program",
+      "href": "/wholesale"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "secondaryMenus": [
+    {
+      "label": "test 1",
+      "href": ""
+    },
+    {
+      "label": "test 2",
+      "href": ""
+    }
+  ],
+  "collections": [
+    {
+      "name": "Patterned Barrels",
+      "slug": "patterned-barrels",
+      "matches": "Patterned, Mosaic, Tribal",
+      "image": "/images/ai/cat_patterned_barrel.png"
+    },
+    {
+      "name": "Classic Barrel Bags",
+      "slug": "classic-barrel-bags",
+      "matches": "Leather Barrel, Cowhide",
+      "image": "/images/ai/cat_classic_barrel.png"
+    },
+    {
+      "name": "Travel & Duffel Sets",
+      "slug": "travel-duffel-sets",
+      "matches": "Duffel",
+      "image": "/images/ai/cat_duffel_sets.png"
+    },
+    {
+      "name": "Executive Briefcases",
+      "slug": "executive-briefcases",
+      "matches": "Briefcase",
+      "image": "/images/ai/cat_briefcases.png"
+    },
+    {
+      "name": "Totes & Shoulder Bags",
+      "slug": "totes-shoulder-bags",
+      "matches": "Tote, Shoulder, Handbag",
+      "image": "/images/ai/cat_tote_shoulder.png"
+    },
+    {
+      "name": "Colorful Bag Collection",
+      "slug": "colorful-bag-collection",
+      "matches": "Red, Blue, Pink, Green, Azure, Emerald, Sapphire, Plum, Crimson",
+      "image": "/images/ai/cat_vibrant_bags.png"
+    }
+  ],
+  "footerDescription": "Offering authentic Moroccan products, handmade by local artisans in Marrakech. Inspired by tradition and made using sustainable practices.",
+  "footerQuickLinks": [
+    {
+      "label": "Catalog",
+      "href": "/catalog"
+    },
+    {
+      "label": "Our Story",
+      "href": "/our-story"
+    },
+    {
+      "label": "Reviews",
+      "href": "/reviews"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Customization",
+      "href": "/customization"
+    },
+    {
+      "label": "Wholesale Program",
+      "href": "/wholesale"
+    }
+  ],
+  "footerPolicyLinks": [
+    {
+      "label": "Shipping Terms",
+      "href": "/shipping"
+    },
+    {
+      "label": "Warranty",
+      "href": "/warranty"
+    },
+    {
+      "label": "Refund Policy",
+      "href": "/refund"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "/terms"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy"
+    }
+  ]
+}
