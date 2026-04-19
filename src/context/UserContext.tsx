@@ -38,46 +38,21 @@ interface UserContextType {
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
 export function UserProvider({ children }: { children: React.ReactNode }) {
-    const [user, setUser] = useState<User | null>(null);
+    const [user] = useState<User | null>(null);
 
-    // Initial load from local storage
-    useEffect(() => {
-        const storedUser = localStorage.getItem('craftly_aura_user');
-        if (storedUser) {
-            setUser(JSON.parse(storedUser));
-        }
-    }, []);
+    // Real authentication coming soon — user accounts are disabled in this version.
+    // When integrating a real auth provider (NextAuth, Supabase, etc.), replace this context.
 
     const loginWithGoogle = () => {
-        // Simulated Google Login
-        const mockUser: User = {
-            id: 'google_oauth_' + Math.random().toString(36).substring(7),
-            name: 'Demo User',
-            email: 'demo@gmail.com',
-            avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Felix',
-            fidelityPoints: 850, // Starting with 850 points
-            isExclusiveMember: false,
-            exclusiveItems: [],
-            referralCode: 'REF-' + Math.random().toString(36).substring(2, 8).toUpperCase(),
-            totalReferrals: 3,
-            successfulReferrals: 1
-        };
-        setUser(mockUser);
-        localStorage.setItem('craftly_aura_user', JSON.stringify(mockUser));
+        // No-op in production — real auth not yet wired
+        console.warn('User authentication is not yet enabled in production.');
     };
 
     const logout = () => {
-        setUser(null);
-        localStorage.removeItem('craftly_aura_user');
+        // No-op in production
     };
 
-    const redeemPoints = () => {
-        if (user && user.fidelityPoints >= 1000) {
-            const updatedUser = { ...user, fidelityPoints: user.fidelityPoints - 1000 };
-            setUser(updatedUser);
-            localStorage.setItem('craftly_aura_user', JSON.stringify(updatedUser));
-            return VIP_COUPON_CODES[Math.floor(Math.random() * VIP_COUPON_CODES.length)];
-        }
+    const redeemPoints = (): string | null => {
         return null;
     };
 

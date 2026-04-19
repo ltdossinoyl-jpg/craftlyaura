@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import styles from './admin.module.css';
 
 // Simple Toast Notification
@@ -68,8 +69,14 @@ const ArrayEditor = ({ title, description, data, onChange, itemTemplate }: any) 
 };
 
 export default function AdvancedAdminDashboard() {
+    const router = useRouter();
     const [activeTab, setActiveTab] = useState<'products' | 'settings'>('products');
     const fileInputRef = useRef<HTMLInputElement>(null);
+
+    const handleLogout = async () => {
+        await fetch('/api/admin-logout', { method: 'POST' });
+        router.push('/admin/login');
+    };
 
     const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
         if (!e.target.files || e.target.files.length === 0 || activeIdx === null || !products[activeIdx]) return;
@@ -277,6 +284,12 @@ export default function AdvancedAdminDashboard() {
                     </button>
                     <button className={styles.btnPrimary} onClick={handleSaveAll} disabled={saving}>
                         {saving ? 'Saving...' : '💾 Publish Changes'}
+                    </button>
+                    <button
+                        onClick={handleLogout}
+                        style={{ padding: '0.5rem 1rem', background: '#fef2f2', color: '#dc2626', border: '1px solid #fecaca', borderRadius: '0.375rem', fontWeight: 600, fontSize: '0.875rem', cursor: 'pointer' }}
+                    >
+                        🔓 Logout
                     </button>
                 </div>
             </header>
