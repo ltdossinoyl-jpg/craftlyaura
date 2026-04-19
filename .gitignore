@@ -80,3 +80,9 @@ frontend/.env.local
 frontend/.env.development.local
 frontend/.env.production.local
 >>>>>>> bee6a24 (feat: add product images, implement ImageLightbox component, and create terms page.)
+
+frontend/node_modules/
+frontend/.next/
+node_modules/
+.next/
+*.log
