@@ -1,0 +1,364 @@
+{
+  "collections": [
+    {
+      "id": 706284454218,
+      "title": "Backpack 🌾🎒",
+      "handle": "backpack-🌾🎒",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">It's time to embrace a new level of style, functionality, and eco-consciousness with our stunning Backpack Collection! 🌟🌿</p>\n</div>",
+      "published_at": "2026-03-06T01:12:27+01:00",
+      "updated_at": "2026-03-12T02:52:34+01:00",
+      "image": {
+        "id": 1814890152266,
+        "created_at": "2026-03-06T01:12:26+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/85261da6d4dc33cde9f7f8b8c3facdcb1f621c68ff2b9653b14d806ba16a57e0.webp?v=1772755947",
+        "alt": null
+      },
+      "products_count": 27
+    },
+    {
+      "id": 706208465226,
+      "title": "Best Sellers",
+      "handle": "best-sellers",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">The perfect Wholesale Straw Bags to stock in your store? Look no further than our curated collection of top-selling styles! We've hand-selected the most popular and versatile bags from our full range of products to make it easy for you to find the perfect fit for your customers.</p>\n</div>",
+      "published_at": "2026-03-05T02:13:12+01:00",
+      "updated_at": "2026-03-17T12:36:39+01:00",
+      "image": {
+        "id": 1814864789834,
+        "created_at": "2026-03-05T02:13:10+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/59ef5776457df01b6839bc19d2b4e10bf81847e656597396cbff051d7faf0d02.webp?v=1772673191",
+        "alt": null
+      },
+      "products_count": 17
+    },
+    {
+      "id": 706209251658,
+      "title": "Christmas Straw Bags 🎅",
+      "handle": "christmas-straw-bags-🎅",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Get ready to be Santa's stylish helper with our delightful straw bags that carry the spirit of the season in every thread.</p>\n</div>",
+      "published_at": "2026-03-05T02:29:43+01:00",
+      "updated_at": "2026-03-12T02:52:17+01:00",
+      "image": {
+        "id": 1814864986442,
+        "created_at": "2026-03-05T02:29:42+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/51ab86450d0dd1de09edecad88901f6fc2289652e3997908efce0f56f439efc7.webp?v=1772674183",
+        "alt": null
+      },
+      "products_count": 10
+    },
+    {
+      "id": 706285437258,
+      "title": "Easter Basket - Customized",
+      "handle": "easter-basket-customized",
+      "description": "<p>From fluffy bunnies to elegant floral designs, choose a theme that matches your Easter celebration.</p>",
+      "published_at": "2026-03-06T01:37:32+01:00",
+      "updated_at": "2026-03-12T02:52:19+01:00",
+      "image": {
+        "id": 1814890512714,
+        "created_at": "2026-03-06T01:37:31+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/6b77177976711dff8beba035c81e5ff55ba2e3b03be145bb997ff445a2882527.webp?v=1772757452",
+        "alt": null
+      },
+      "products_count": 6
+    },
+    {
+      "id": 706010710346,
+      "title": "Footwear Collection 👞👠👟",
+      "handle": "new-footwear-collection-👞👠👟",
+      "description": "<p>These super comfy leather slippers are natural, breathable, will mold themselves to the shape of your feet and are perfect for relaxing in the mornings and evenings after a hard day's work. The ideal gift, and of course, the ultimate work from home footwear!</p>",
+      "published_at": "2026-03-03T01:15:38+01:00",
+      "updated_at": "2026-03-12T02:52:29+01:00",
+      "image": {
+        "id": 1814962798922,
+        "created_at": "2026-03-08T01:24:20+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/69939dcd6f4419b437ce9ad5d1c98a812a9ffbfa450de9a0f96bd5673974121a_a4bb32bc-06e7-47bc-ab1e-6ad2a5877df9.webp?v=1772929460",
+        "alt": null
+      },
+      "products_count": 34
+    },
+    {
+      "id": 706284585290,
+      "title": "Handmade Moroccan Ceramic Collection",
+      "handle": "handmade-moroccan-ceramic-collection",
+      "description": "<div style=\"max-width: 800px; margin: auto; text-align: center;\">\n<p>Discover the beauty of Moroccan craftsmanship with our handmade ceramic collection. Each piece showcases intricate designs, vibrant colors, and timeless tradition. Perfect for adding a touch of culture and elegance to your home or boutique.</p>\n</div>",
+      "published_at": "2026-03-06T01:17:32+01:00",
+      "updated_at": "2026-03-14T22:07:43+01:00",
+      "image": {
+        "id": 1814890217802,
+        "created_at": "2026-03-06T01:17:31+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/87994f47a8dcef948e5ba86e86ec56828049bb66286a204d335272f15ed1597a.webp?v=1772756252",
+        "alt": null
+      },
+      "products_count": 12
+    },
+    {
+      "id": 706209218890,
+      "title": "Handwoven Stitch Baskets",
+      "handle": "handwoven-stitch-baskets",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Discover our Artisan Stitch Baskets, handwoven in Morocco with unique stitched details. Each basket blends tradition with modern design, perfect for storage, décor, or gifting. Durable, sustainable, and crafted with care for a timeless handmade touch.</p>\n</div>",
+      "published_at": "2026-03-05T02:28:57+01:00",
+      "updated_at": "2026-03-12T02:52:07+01:00",
+      "image": {
+        "id": 1814864953674,
+        "created_at": "2026-03-05T02:28:56+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/d69c3bc1b50bafaf4e39bc274b47692785adf3526d588b5877060421f0b1fc2a.webp?v=1772674137",
+        "alt": null
+      },
+      "products_count": 24
+    },
+    {
+      "id": 706285011274,
+      "title": "Leather Backpack kilim",
+      "handle": "leather-backpack-kilim",
+      "description": "<p>Discover our stunning leather backpacks adorned with vibrant kilim patterns. Handcrafted with care, these backpacks fuse traditional craftsmanship with modern design. Each piece is a work of art, featuring supple leather and intricate kilim weavings. </p>",
+      "published_at": "2026-03-06T01:27:52+01:00",
+      "updated_at": "2026-03-12T02:52:47+01:00",
+      "image": {
+        "id": 1814890381642,
+        "created_at": "2026-03-06T01:27:50+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/73b36d82f37b90d8c7d5afeefc54c3d36079d53be186fc1aaae0ca7f270edbe2.webp?v=1772756872",
+        "alt": null
+      },
+      "products_count": 43
+    },
+    {
+      "id": 706208956746,
+      "title": "Leather Bag",
+      "handle": "leather-bag",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">100% High quality genuine leather and excellent workmanship</p>\n</div>",
+      "published_at": "2026-03-05T02:26:26+01:00",
+      "updated_at": "2026-03-12T02:52:47+01:00",
+      "image": {
+        "id": 1814864855370,
+        "created_at": "2026-03-05T02:26:25+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/879585084f4a18b79ff55419da7d5685df8b717cdb0419c7565f01314cf5122b.webp?v=1772673986",
+        "alt": null
+      },
+      "products_count": 48
+    },
+    {
+      "id": 706284749130,
+      "title": "Leather Pouf Collection!",
+      "handle": "leather-pouf-collection",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">We are thrilled to introduce our handpicked selection of luxurious leather poufs that are designed to take your home decor to the next level of style and comfort! 🎉✨</p>\n</div>",
+      "published_at": "2026-03-06T01:21:07+01:00",
+      "updated_at": "2026-03-12T02:51:36+01:00",
+      "image": {
+        "id": 1814890283338,
+        "created_at": "2026-03-06T01:21:06+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/ba51176b5400e6c401d0fcb96b4ee3b254925311115d2e6c8cbb16f4db722bd6.webp?v=1772756466",
+        "alt": null
+      },
+      "products_count": 17
+    },
+    {
+      "id": 706285076810,
+      "title": "Moroccan Rug",
+      "handle": "moroccan-rug",
+      "description": "<p>This natural basket is perfect anytime and everywhere, you can use it as beach bag, for shopping, for the pool, for go to the grocery, etc. Finally, you can use your straw bag for everyday use, always with style and authenticity.</p>",
+      "published_at": "2026-03-06T01:31:27+01:00",
+      "updated_at": "2026-03-14T22:06:57+01:00",
+      "image": {
+        "id": 1814890414410,
+        "created_at": "2026-03-06T01:31:25+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/85e5f139d8cd064303760ea154676dcdd1494d2929d04815bd030b8ed5c576e1.webp?v=1772757087",
+        "alt": null
+      },
+      "products_count": 6
+    },
+    {
+      "id": 706011758922,
+      "title": "New arrivals",
+      "handle": "new-arrivals",
+      "description": "",
+      "published_at": "2026-03-03T01:43:42+01:00",
+      "updated_at": "2026-03-12T02:52:36+01:00",
+      "image": {
+        "id": 1814962733386,
+        "created_at": "2026-03-08T01:05:01+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/350cdea33dfe7e8b3571b643e119ffcfaa09a65b6f609adf8c0693cf3aa255b4.jpg?v=1772928301",
+        "alt": null
+      },
+      "products_count": 148
+    },
+    {
+      "id": 706209120586,
+      "title": "New Footwear Collection",
+      "handle": "new-footwear-collection",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">These super comfy leather slippers are natural, breathable, will mould themselves to the shape of your feet and are perfect for relaxing in the mornings and evenings after a hard days work. The ideal gift, and of course, the ultimate work from home footware!</p>\n</div>",
+      "published_at": "2026-03-05T02:28:06+01:00",
+      "updated_at": "2026-03-12T02:52:29+01:00",
+      "image": {
+        "id": 1814864920906,
+        "created_at": "2026-03-05T02:28:05+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/69939dcd6f4419b437ce9ad5d1c98a812a9ffbfa450de9a0f96bd5673974121a_2bd8734e-5eb1-4871-8fb8-67abaaceffc8.webp?v=1772674086",
+        "alt": null
+      },
+      "products_count": 37
+    },
+    {
+      "id": 706010743114,
+      "title": "Personalized Straw Bags! 🌸👜",
+      "handle": "personalized-straw-bags-🌸👜",
+      "description": "<p>We're excited to present our Personalized Straw Bag, a perfect blend of style, functionality, and sustainability.</p>",
+      "published_at": "2026-03-03T01:18:12+01:00",
+      "updated_at": "2026-03-17T12:36:39+01:00",
+      "image": {
+        "id": 1814962766154,
+        "created_at": "2026-03-08T01:24:17+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/16fe50a6ce8878adcb05bea9bc52af6353c24dbc754e5e9acc313cd2952ea288_4e734698-cc47-4fa0-9836-49cee991d35d.webp?v=1772929457",
+        "alt": null
+      },
+      "products_count": 423
+    },
+    {
+      "id": 706209382730,
+      "title": "Pom Pom Blankets",
+      "handle": "pom-pom-blankets",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Handmade Moroccan cotton blankets with pom poms. Soft, stylish, and perfect for cozy home decor.</p>\n</div>",
+      "published_at": "2026-03-05T02:30:26+01:00",
+      "updated_at": "2026-03-12T02:51:21+01:00",
+      "image": {
+        "id": 1814865019210,
+        "created_at": "2026-03-05T02:30:25+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/600758894acb319598b61f25b741f61d534028f974d130ab5e2070ac48eda714.webp?v=1772674225",
+        "alt": null
+      },
+      "products_count": 16
+    },
+    {
+      "id": 706209415498,
+      "title": "Raffia Lamp Shade",
+      "handle": "raffia-lamp-shade",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Illuminate your space with our Raffia Lamp Shade Collection. Handcrafted from natural raffia, each shade adds a touch of rustic charm and elegance to any room. Perfect for enhancing your lighting with a unique, artisanal touch, these shades blend beauty with functionality.</p>\n</div>",
+      "published_at": "2026-03-05T02:31:05+01:00",
+      "updated_at": "2026-03-12T02:52:47+01:00",
+      "image": {
+        "id": 1814865051978,
+        "created_at": "2026-03-05T02:31:03+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/2ccc4aedb901bf214271e9013799dac1b0c0bb533b0183be802b1d5f7be561d0.webp?v=1772674264",
+        "alt": null
+      },
+      "products_count": 109
+    },
+    {
+      "id": 706209087818,
+      "title": "Reed Storage Baskets 🌾",
+      "handle": "reed-storage-baskets-🌾",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Introducing our curated collection of Reed Storage Baskets – where functionality meets rustic charm. These handcrafted, eco-friendly baskets are designed to bring order to your spaces while adding a touch of nature's beauty.</p>\n</div>",
+      "published_at": "2026-03-05T02:27:12+01:00",
+      "updated_at": "2026-03-12T02:51:21+01:00",
+      "image": {
+        "id": 1814864888138,
+        "created_at": "2026-03-05T02:27:10+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/a854f2bfbe913c62ebaeb28f1a409ec44c347d36197bab20c17e5e1344395563.webp?v=1772674031",
+        "alt": null
+      },
+      "products_count": 43
+    },
+    {
+      "id": 706284945738,
+      "title": "Round Basket 🧺🌀",
+      "handle": "round-basket-🌀",
+      "description": "<p>Welcome to a world of woven wonders in our 'Circular Elegance: Round Basket Collection.' Each of these meticulously crafted baskets is a testament to the artistry of skilled artisans. These round wonders come in a variety of sizes, styles, and materials, showcasing the versatilit</p>",
+      "published_at": "2026-03-06T01:25:24+01:00",
+      "updated_at": "2026-03-12T02:51:56+01:00",
+      "image": {
+        "id": 1814890348874,
+        "created_at": "2026-03-06T01:25:22+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/9a5a9fb4674fc0438eac48ad727a4cbbd887085b9176f0f9a129775da26a9f86.webp?v=1772756724",
+        "alt": null
+      },
+      "products_count": 20
+    },
+    {
+      "id": 706285142346,
+      "title": "STRAW BAG Handmade with leather",
+      "handle": "straw-bag-handmade-with-leather",
+      "description": "<p>This natural basket is perfect anytime and everywhere, you can use it as beach bag, for shopping, for the pool, for go to the grocery, etc. Finally, you can use your straw bag for everyday use, always with style and authenticity.</p>",
+      "published_at": "2026-03-06T01:34:38+01:00",
+      "updated_at": "2026-03-12T02:51:54+01:00",
+      "image": {
+        "id": 1814890447178,
+        "created_at": "2026-03-06T01:34:37+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/796dd4e91adc6476a1483027cba644b3dc1246bf4379b570a24488cd489f3bff.webp?v=1772757278",
+        "alt": null
+      },
+      "products_count": 17
+    },
+    {
+      "id": 706284716362,
+      "title": "Straw baskets with Sequins",
+      "handle": "straw-baskets-with-sequins",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">This is a great basket for the beach or for shopping and will also make a great home storage basket.</p>\n</div>",
+      "published_at": "2026-03-06T01:19:29+01:00",
+      "updated_at": "2026-03-12T02:51:52+01:00",
+      "image": {
+        "id": 1814890250570,
+        "created_at": "2026-03-06T01:19:28+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/c6fcc5782fae1b4e0954a0445ecc418594d3d8eff4ff07ed4ebcdaf264b82fa8.webp?v=1772756369",
+        "alt": null
+      },
+      "products_count": 12
+    },
+    {
+      "id": 706284781898,
+      "title": "Straw Hat Collection! ☀️👒",
+      "handle": "straw-hat-collection-☀️👒",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Get ready to embrace the warmth of the sun and the beauty of summer with our exquisite Straw Hat Collection! Whether you're lounging by the beach, strolling through the park, or attending a stylish outdoor event, 🌞🌼</p>\n</div>",
+      "published_at": "2026-03-06T01:22:52+01:00",
+      "updated_at": "2026-03-12T02:52:45+01:00",
+      "image": {
+        "id": 1814890316106,
+        "created_at": "2026-03-06T01:22:51+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/eb0d933a9e216c741aac17446f9c72b4647f7008631f739305a59490f5108233.webp?v=1772756571",
+        "alt": null
+      },
+      "products_count": 13
+    },
+    {
+      "id": 706010677578,
+      "title": "The Raffia & Wood Series",
+      "handle": "the-raffia-wood-series",
+      "description": "<p>Discover our handwoven collection of eco-friendly raffia and wooden home décor. Each piece is crafted with natural materials, blending sustainability with artisanal beauty. Perfect for adding a touch of rustic elegance to your space, from lighting to storage solutions</p>",
+      "published_at": "2026-03-03T01:13:21+01:00",
+      "updated_at": "2026-03-12T02:52:23+01:00",
+      "image": {
+        "id": 1814962831690,
+        "created_at": "2026-03-08T01:24:25+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/3ac14355dd9fdd7cd368e38ced198d912a996e3d2eb0586c74ffc21b6de06ec6_3559c816-9ab1-47eb-9d04-4abf1c73399c.webp?v=1772929465",
+        "alt": null
+      },
+      "products_count": 65
+    },
+    {
+      "id": 706209513802,
+      "title": "Wicker Storage Trunk",
+      "handle": "wicker-storage-trunk",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Discover elegance and function with our Wicker Storage Trunk Collection. Each trunk is handcrafted from premium wicker, offering a stylish and durable solution for organizing your space. Perfect for adding a touch of charm while keeping essentials neatly stored.</p>\n</div>",
+      "published_at": "2026-03-05T02:33:38+01:00",
+      "updated_at": "2026-03-12T02:51:03+01:00",
+      "image": {
+        "id": 1814865084746,
+        "created_at": "2026-03-05T02:33:37+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/e2f18b3170fdf8bd02681ae353dab5e5eb2ce6e64885f239f558d9c3a348d690.webp?v=1772674417",
+        "alt": null
+      },
+      "products_count": 14
+    },
+    {
+      "id": 706444460362,
+      "title": "🎃 Halloween Edition 👻",
+      "handle": "🎃-halloween-edition-👻",
+      "description": "<div data-test-id=\"collection-header-details\" class=\"sc-366bbad2-3 hBRXzX f_flex_base f_flex_single_value_align f_flex_single_value_justify f_flex_single_value_direction\">\n<p data-test-id=\"collection-description\" class=\"f_t_base f_t_color f_t_paragraphSansRegular\">Discover the enchanting \"Moroccan Mystique\" Halloween collection. Handcrafted by skilled artisans, this collection blends traditional Moroccan artistry with a spooky twist, perfect for elevating your Halloween decor with exotic elegance.</p>\n</div>",
+      "published_at": "2026-03-08T02:35:12+01:00",
+      "updated_at": "2026-03-12T02:52:31+01:00",
+      "image": {
+        "id": 1814962995530,
+        "created_at": "2026-03-08T02:35:11+01:00",
+        "src": "https://cdn.shopify.com/s/files/1/1024/2411/7578/collections/39dc9e34cc2e4924e6ce128bd3808ec7bb70f781d9bf56f8c1be5dd9dc4b0dab_48448f4f-cc92-426c-94b6-223a0f3aaa23.webp?v=1772933712",
+        "alt": null
+      },
+      "products_count": 16
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<<<<<<< HEAD
+# archives
+*.rar
+*.zip
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/backend
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+=======
+# Root .gitignore for handmadebestseller_project
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+
+# Production
+build/
+
+# Misc
+.DS_Store
+*.pem
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Logs
+>>>>>>> bee6a24 (feat: add product images, implement ImageLightbox component, and create terms page.)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+<<<<<<< HEAD
+# local env files
+.env*.local
+.env*.example
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+=======
+# Workspace
+.vscode/
+
+# Project specific
+backend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.production.local
+>>>>>>> bee6a24 (feat: add product images, implement ImageLightbox component, and create terms page.)
