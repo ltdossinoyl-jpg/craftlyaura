@@ -54,18 +54,14 @@ export default function Home() {
               { name: 'DHL EXPRESS', domain: 'dhl.com' },
               { name: 'UPS', domain: 'ups.com' },
               { name: 'ARAMEX', domain: 'aramex.com' },
-              { name: 'FAIRE', domain: 'faire.com' },
-              { name: 'ANKORSTORE', domain: 'ankorstore.com' },
-              { name: 'CREOATE', domain: 'creoate.com' },
-              { name: 'BULLETIN', domain: 'bulletin.co' },
               { name: 'FEDEX', domain: 'fedex.com' },
               { name: 'DHL EXPRESS', domain: 'dhl.com' },
               { name: 'UPS', domain: 'ups.com' },
               { name: 'ARAMEX', domain: 'aramex.com' },
-              { name: 'FAIRE', domain: 'faire.com' },
-              { name: 'ANKORSTORE', domain: 'ankorstore.com' },
-              { name: 'CREOATE', domain: 'creoate.com' },
-              { name: 'BULLETIN', domain: 'bulletin.co' }
+              { name: 'FEDEX', domain: 'fedex.com' },
+              { name: 'DHL EXPRESS', domain: 'dhl.com' },
+              { name: 'UPS', domain: 'ups.com' },
+              { name: 'ARAMEX', domain: 'aramex.com' }
             ].map((brand, i) => (
               <span key={`a-${i}`} className={styles.tickerText}>
                 <img
@@ -85,18 +81,14 @@ export default function Home() {
               { name: 'DHL EXPRESS', domain: 'dhl.com' },
               { name: 'UPS', domain: 'ups.com' },
               { name: 'ARAMEX', domain: 'aramex.com' },
-              { name: 'FAIRE', domain: 'faire.com' },
-              { name: 'ANKORSTORE', domain: 'ankorstore.com' },
-              { name: 'CREOATE', domain: 'creoate.com' },
-              { name: 'BULLETIN', domain: 'bulletin.co' },
               { name: 'FEDEX', domain: 'fedex.com' },
               { name: 'DHL EXPRESS', domain: 'dhl.com' },
               { name: 'UPS', domain: 'ups.com' },
               { name: 'ARAMEX', domain: 'aramex.com' },
-              { name: 'FAIRE', domain: 'faire.com' },
-              { name: 'ANKORSTORE', domain: 'ankorstore.com' },
-              { name: 'CREOATE', domain: 'creoate.com' },
-              { name: 'BULLETIN', domain: 'bulletin.co' }
+              { name: 'FEDEX', domain: 'fedex.com' },
+              { name: 'DHL EXPRESS', domain: 'dhl.com' },
+              { name: 'UPS', domain: 'ups.com' },
+              { name: 'ARAMEX', domain: 'aramex.com' }
             ].map((brand, i) => (
               <span key={`b-${i}`} className={styles.tickerText}>
                 <img
