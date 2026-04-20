@@ -486,7 +486,17 @@ export default function AdvancedAdminDashboard() {
                                                 <input
                                                     type="text"
                                                     value={activeProd.title || ""}
-                                                    onChange={(e) => updateActiveProduct('title', e.target.value)}
+                                                    onChange={(e) => {
+                                                        const title = e.target.value;
+                                                        updateActiveProduct('title', title);
+                                                        // Auto-generate slug from title
+                                                        const slug = title
+                                                            .toLowerCase()
+                                                            .trim()
+                                                            .replace(/[^a-z0-9\s-]/g, '')
+                                                            .replace(/\s+/g, '_');
+                                                        updateActiveProduct('slug', slug);
+                                                    }}
                                                 />
                                             </div>
 
