@@ -3,9 +3,8 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
-import productsData from '@/data/products.json';
 import styles from './page.module.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductCard from '@/components/ProductCard';
 import dynamic from 'next/dynamic';
 import NotifyMePopup from '@/components/NotifyMePopup';
@@ -89,9 +88,43 @@ const Accordion = ({ title, content, productSlug }: { title: string, content: st
 export default function ProductPage({ params }: { params: { id: string } }) {
     const { id } = React.use(params as unknown as Promise<{ id: string }>);
     const { addItem, openCheckoutDrawer } = useCart();
+    const [product, setProduct] = useState<any>(null);
+    const [allProducts, setAllProducts] = useState<any[]>([]);
+    const [pageLoading, setPageLoading] = useState(true);
 
-    // Find the product
-    const product = productsData.find((p) => p.id === id);
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const [prodRes, allRes] = await Promise.all([
+                    fetch(`/api/products?id=${id}`),
+                    fetch('/api/products')
+                ]);
+                if (prodRes.ok) {
+                    const prodData = await prodRes.json();
+                    setProduct(prodData);
+                }
+                if (allRes.ok) {
+                    const allData = await allRes.json();
+                    setAllProducts(Array.isArray(allData) ? allData : []);
+                }
+            } catch (err) {
+                console.error('Failed to fetch product:', err);
+            }
+            setPageLoading(false);
+        }
+        fetchData();
+    }, [id]);
+
+    if (pageLoading) {
+        return (
+            <div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ textAlign: 'center' }}>
+                    <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⏳</div>
+                    <p style={{ color: '#6b7280' }}>Loading product...</p>
+                </div>
+            </div>
+        );
+    }
 
     if (!product) {
         notFound();
@@ -255,12 +288,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     })();
 
     // Upsell logic: pick 4 products from same category or fallback to any 4
-    let relatedProducts = productsData
-        .filter(p => p.id !== product.id && p.category === product.category)
+    let relatedProducts = allProducts
+        .filter((p: any) => p.id !== product.id && p.category === product.category)
         .slice(0, 4);
 
     if (relatedProducts.length < 4) {
-        const fillers = productsData.filter(p => p.id !== product.id && !relatedProducts.includes(p));
+        const fillers = allProducts.filter((p: any) => p.id !== product.id && !relatedProducts.includes(p));
         relatedProducts = [...relatedProducts, ...fillers.slice(0, 4 - relatedProducts.length)];
     }
 
