@@ -11,6 +11,8 @@
   "dependencies": {
     "@vercel/speed-insights": "^2.0.0",
     "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "cloudinary": "^2.9.0",
+    "mongoose": "^9.4.1",
     "next": "16.2.0",
     "openai": "^6.32.0",
     "pino": "^10.3.1",

@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { uploadImage } from '@/lib/cloudinary';
 
 export async function POST(req: Request) {
     try {
@@ -11,22 +10,21 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: 'No file received.' }, { status: 400 });
         }
 
+        // Check file size (max 10MB)
+        if (file.size > 10 * 1024 * 1024) {
+            return NextResponse.json({ error: 'File too large. Maximum size is 10MB.' }, { status: 413 });
+        }
+
         const buffer = Buffer.from(await file.arrayBuffer());
-        // Clean filename to be safe
         const cleanName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '');
         const filename = Date.now() + '_' + cleanName;
 
-        const uploadDir = path.join(process.cwd(), 'public/images/uploads');
-        if (!fs.existsSync(uploadDir)) {
-            fs.mkdirSync(uploadDir, { recursive: true });
-        }
-
-        const filePath = path.join(uploadDir, filename);
-        fs.writeFileSync(filePath, buffer);
+        // Upload to Cloudinary
+        const url = await uploadImage(buffer, filename);
 
         return NextResponse.json({
             success: true,
-            url: `/images/uploads/${filename}`
+            url: url
         });
     } catch (error) {
         console.error("Upload API Error:", error);
