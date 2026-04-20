@@ -20,7 +20,6 @@ import productsData from '@/data/products.json';
 import settingsData from '@/data/settings.json';
 
 import ChatWidget from '@/components/chat/ChatWidget';
-import SalesNotification from '@/components/SalesNotification';
 
 export default function RootLayout({
   children,
@@ -59,7 +58,6 @@ export default function RootLayout({
             <CheckoutDrawer />
             <main>{children}</main>
             <ChatWidget />
-            <SalesNotification />
             <Footer />
             <SpeedInsights />
           </CartProvider>
@@ -68,4 +66,3 @@ export default function RootLayout({
     </html>
   );
 }
-
