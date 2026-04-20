@@ -107,9 +107,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     const prodData = await prodRes.json();
                     setProduct(prodData);
 
-                    // Initialize main image
-                    const imgs = prodData.images && prodData.images.length > 0 ? prodData.images : [prodData.image];
-                    setMainImage(imgs[0] || '');
+                    // Initialize main image — use product.image (admin-set cover) first
+                    setMainImage(prodData.image || (prodData.images && prodData.images[0]) || '');
 
                     // Initialize variation selections
                     const vTypes = prodData.variationTypes as Record<string, string[]> | undefined;
