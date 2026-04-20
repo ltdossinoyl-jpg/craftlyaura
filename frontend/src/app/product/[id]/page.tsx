@@ -99,10 +99,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     useEffect(() => {
         async function fetchData() {
             try {
-                const [prodRes, allRes] = await Promise.all([
-                    fetch(`/api/products?id=${id}`),
-                    fetch('/api/products')
-                ]);
+                // Try slug first, fallback to id for backward compatibility
+                let prodRes = await fetch(`/api/products?slug=${id}`);
+                if (!prodRes.ok) {
+                    prodRes = await fetch(`/api/products?id=${id}`);
+                }
+                const allRes = await fetch('/api/products');
                 if (prodRes.ok) {
                     const prodData = await prodRes.json();
                     setProduct(prodData);

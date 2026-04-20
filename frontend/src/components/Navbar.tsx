@@ -223,7 +223,7 @@ export default function Navbar({ megaMenuProducts = {} }: NavbarProps) {
                                         <div className={styles.megaMenuProductsGrid}>
                                             {(megaMenuProducts[activeMegaMenuCategory.slug] || []).map(product => (
                                                 <Link
-                                                    href={`/product/${product.id}`}
+                                                    href={`/product/${product.slug || product.id}`}
                                                     key={product.id}
                                                     className={styles.megaMenuProductCard}
                                                     onClick={() => setIsMegaMenuOpen(false)}

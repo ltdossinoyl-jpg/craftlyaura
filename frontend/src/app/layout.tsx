@@ -47,7 +47,8 @@ async function getMegaMenuProducts() {
         id: p.id,
         title: p.title,
         price: p.price,
-        image: p.image
+        image: p.image,
+        slug: p.slug
       }));
   });
   return megaMenuProducts;

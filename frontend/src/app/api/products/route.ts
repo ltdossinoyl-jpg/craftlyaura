@@ -6,13 +6,21 @@ import { Product } from '@/models/Product';
 export async function GET(req: Request) {
     const { searchParams } = new URL(req.url);
     const productId = searchParams.get('id');
+    const productSlug = searchParams.get('slug');
 
     try {
         await connectDB();
 
         if (productId) {
-            // Fetch single product
             const product = await Product.findOne({ id: productId }).lean();
+            if (product) {
+                return NextResponse.json(product);
+            }
+            return NextResponse.json({ error: 'Product not found' }, { status: 404 });
+        }
+
+        if (productSlug) {
+            const product = await Product.findOne({ slug: productSlug }).lean();
             if (product) {
                 return NextResponse.json(product);
             }

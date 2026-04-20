@@ -40,7 +40,7 @@ export default function ProductCard({ product, index }: { product: Product; inde
         <>
             <div className={`${styles.productCard} fade-in`} style={{ animationDelay: `${(index % 20) * 0.05}s` }}>
                 <div className={styles.imageWrapper}>
-                    <Link href={`/product/${product.id}`} className={styles.imageLink} style={{ position: 'relative', display: 'block', width: '100%', height: '100%' }}>
+                    <Link href={`/product/${product.slug || product.id}`} className={styles.imageLink} style={{ position: 'relative', display: 'block', width: '100%', height: '100%' }}>
                         <Image
                             src={product.image}
                             alt={product.title}
@@ -100,7 +100,7 @@ export default function ProductCard({ product, index }: { product: Product; inde
                         </Link>
                     </p>
                     <h3 className={styles.productTitle}>
-                        <Link href={`/product/${product.id}`} className={styles.titleLink}>
+                        <Link href={`/product/${product.slug || product.id}`} className={styles.titleLink}>
                             {product.title}
                         </Link>
                     </h3>

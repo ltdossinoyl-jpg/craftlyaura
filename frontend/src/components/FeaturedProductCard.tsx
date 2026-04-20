@@ -14,16 +14,16 @@ interface FeaturedProduct {
 export default function FeaturedProductCard({ product, index }: { product: FeaturedProduct; index: number }) {
     return (
         <div className={`${styles.card} fade-in`} style={{ animationDelay: `${index * 0.1}s` }}>
-            <Link href={`/product/${product.id}`} className={styles.imageLink}>
+            <Link href={`/product/${product.slug || product.id}`} className={styles.imageLink}>
                 <img src={product.image} alt={product.title} className={styles.productImage} loading="lazy" />
             </Link>
             <div className={styles.info}>
-                <Link href={`/product/${product.id}`}>
+                <Link href={`/product/${product.slug || product.id}`}>
                     <h3 className={styles.productTitle}>{product.title}</h3>
                 </Link>
                 <div className={styles.productPrice}>${product.price.toFixed(2)}</div>
                 <div className={styles.actions}>
-                    <Link href={`/product/${product.id}`} className={styles.btnChooseOption}>
+                    <Link href={`/product/${product.slug || product.id}`} className={styles.btnChooseOption}>
                         Choose your option
                     </Link>
                 </div>
