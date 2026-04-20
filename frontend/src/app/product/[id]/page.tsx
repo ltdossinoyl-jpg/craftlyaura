@@ -208,7 +208,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
     const lines = (product.description || '').split('\n');
 
-    lines.forEach(line => {
+    lines.forEach((line: string) => {
         const t = line.trim();
 
         // Detect section changes
@@ -316,7 +316,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
                             {images.length > 1 && (
                                 <div className={styles.thumbnailStrip}>
-                                    {images.map((img, idx) => (
+                                    {images.map((img: string, idx: number) => (
                                         <button
                                             key={idx}
                                             className={`${styles.thumbnailBtn} ${mainImage === img ? styles.activeThumb : ''}`}
