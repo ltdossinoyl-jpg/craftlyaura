@@ -78,6 +78,8 @@ export default function AdvancedAdminDashboard() {
         router.push('/admin/login');
     };
 
+    const [uploading, setUploading] = useState(false);
+
     const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
         if (!e.target.files || e.target.files.length === 0 || activeIdx === null || !products[activeIdx]) return;
         const files = Array.from(e.target.files);
@@ -86,25 +88,36 @@ export default function AdvancedAdminDashboard() {
         const currentImages: string[] = activeProd.images || [];
         const newImages = [...currentImages];
         let newMainImage = activeProd.image || "";
+        setUploading(true);
 
         for (const file of files) {
+            // Upload directly to Cloudinary from browser (bypasses Vercel 4.5MB limit)
+            const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+            const uploadPreset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET || 'craftlyaura_unsigned';
+
             const formData = new FormData();
             formData.append('file', file);
+            formData.append('upload_preset', uploadPreset);
+            formData.append('folder', 'craftlyaura/products');
 
             try {
-                const res = await fetch('/api/upload', {
+                const res = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
                     method: 'POST',
                     body: formData
                 });
                 const data = await res.json();
-                if (data.url) {
-                    newImages.push(data.url);
+                if (data.secure_url) {
+                    newImages.push(data.secure_url);
                     if (!newMainImage) {
-                        newMainImage = data.url;
+                        newMainImage = data.secure_url;
                     }
+                    showMessage(`✅ Uploaded: ${file.name}`);
+                } else {
+                    showMessage(`❌ Failed to upload ${file.name}: ${data.error?.message || 'Unknown error'}`, 'error');
                 }
             } catch (err) {
                 console.error("Upload failed", err);
+                showMessage(`❌ Upload failed for ${file.name}`, 'error');
             }
         }
 
@@ -113,6 +126,7 @@ export default function AdvancedAdminDashboard() {
         newProds[activeIdx].images = newImages;
         newProds[activeIdx].image = newMainImage;
         setProducts(newProds);
+        setUploading(false);
 
         if (fileInputRef.current) fileInputRef.current.value = "";
     };
@@ -549,9 +563,9 @@ export default function AdvancedAdminDashboard() {
                                                 ))}
 
                                                 {/* Upload Button */}
-                                                <div style={{ border: '2px dashed #d1d5db', borderRadius: '0.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', aspectRatio: '1/1', background: '#f9fafb' }} onClick={() => fileInputRef.current?.click()}>
-                                                    <span style={{ fontSize: '2rem', color: '#9ca3af', lineHeight: 1 }}>+</span>
-                                                    <span style={{ fontSize: '0.75rem', color: '#6b7280', marginTop: '0.25rem' }}>Upload</span>
+                                                <div style={{ border: '2px dashed #d1d5db', borderRadius: '0.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', cursor: uploading ? 'wait' : 'pointer', aspectRatio: '1/1', background: uploading ? '#eef2ff' : '#f9fafb', opacity: uploading ? 0.7 : 1 }} onClick={() => !uploading && fileInputRef.current?.click()}>
+                                                    <span style={{ fontSize: '2rem', color: '#9ca3af', lineHeight: 1 }}>{uploading ? '⏳' : '+'}</span>
+                                                    <span style={{ fontSize: '0.75rem', color: '#6b7280', marginTop: '0.25rem' }}>{uploading ? 'Uploading...' : 'Upload'}</span>
                                                     <input type="file" multiple accept="image/*" ref={fileInputRef} style={{ display: 'none' }} onChange={handleFileUpload} />
                                                 </div>
                                             </div>
