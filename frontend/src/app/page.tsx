@@ -1,11 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import productsData from '@/data/products.json';
 import settingsData from '@/data/settings.json';
 import ProductCard from '@/components/ProductCard';
 import HeroSlideshow from '@/components/HeroSlideshow';
 import TrustedPartners from '@/components/TrustedPartners';
 import styles from './page.module.css';
+import { connectDB } from '@/lib/mongodb';
+import { Product } from '@/models/Product';
+
+async function getFeaturedProducts() {
+  try {
+    await connectDB();
+    const products = await Product.find({}).lean();
+    return JSON.parse(JSON.stringify(products));
+  } catch {
+    const productsJson = await import('@/data/products.json');
+    return productsJson.default;
+  }
+}
 
 const SHOP_COLLECTIONS = [
   {
@@ -40,7 +52,8 @@ const SHOP_COLLECTIONS = [
   }
 ];
 
-export default function Home() {
+export default async function Home() {
+  const productsData = await getFeaturedProducts();
   return (
     <div className={styles.main}>
       <HeroSlideshow />
@@ -177,7 +190,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className={styles.productGrid}>
-                {colProducts.map((product, index) => (
+                {colProducts.map((product: any, index: number) => (
                   <ProductCard key={product.id} product={product as any} index={index} />
                 ))}
               </div>

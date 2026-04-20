@@ -1,9 +1,23 @@
-import React from 'react';
-import productsData from '@/data/products.json';
+"use client";
+
+import React, { useState, useEffect } from 'react';
 import ProductCard from '@/components/ProductCard';
 import styles from '../info.module.css';
 
 export default function CatalogPage() {
+    const [products, setProducts] = useState<any[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetch('/api/products')
+            .then(res => res.json())
+            .then(data => {
+                setProducts(Array.isArray(data) ? data : []);
+                setLoading(false);
+            })
+            .catch(() => setLoading(false));
+    }, []);
+
     return (
         <div className={`container ${styles.page}`}>
             <div className={styles.hero}>
@@ -14,17 +28,23 @@ export default function CatalogPage() {
                 </p>
             </div>
 
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
-                gap: '2rem',
-                maxWidth: '1200px',
-                margin: '0 auto'
-            }}>
-                {productsData.map((product, index) => (
-                    <ProductCard key={product.id} product={product as any} index={index} />
-                ))}
-            </div>
+            {loading ? (
+                <div style={{ textAlign: 'center', padding: '3rem', color: '#6b7280' }}>
+                    Loading products...
+                </div>
+            ) : (
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+                    gap: '2rem',
+                    maxWidth: '1200px',
+                    margin: '0 auto'
+                }}>
+                    {products.map((product, index) => (
+                        <ProductCard key={product.id} product={product as any} index={index} />
+                    ))}
+                </div>
+            )}
         </div>
     );
 }

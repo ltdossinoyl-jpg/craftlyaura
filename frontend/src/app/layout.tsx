@@ -16,24 +16,27 @@ export const metadata: Metadata = {
   },
 };
 
-import productsData from '@/data/products.json';
+import { connectDB } from '@/lib/mongodb';
+import { Product } from '@/models/Product';
 import settingsData from '@/data/settings.json';
 
 import ChatWidget from '@/components/chat/ChatWidget';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  // Precompute only the needed 4 products per category for the Mega Menu
-  // By doing this on the server, we completely prevent the 1.17MB products.json
-  // from being bundled into the client-side JavaScript.
-  const megaMenuProducts: Record<string, any[]> = {};
+async function getMegaMenuProducts() {
+  let products: any[];
+  try {
+    await connectDB();
+    products = await Product.find({}).lean();
+    products = JSON.parse(JSON.stringify(products));
+  } catch {
+    const productsJson = await import('@/data/products.json');
+    products = productsJson.default;
+  }
 
+  const megaMenuProducts: Record<string, any[]> = {};
   settingsData.collections.forEach((cat: any) => {
     const matchTerms = (cat.matches || '').toLowerCase().split(',').map((t: string) => t.trim()).filter(Boolean);
-    megaMenuProducts[cat.slug] = productsData
+    megaMenuProducts[cat.slug] = products
       .filter((p: any) => {
         const title = (p.title || '').toLowerCase();
         const catg = (p.category || '').toLowerCase();
@@ -47,6 +50,15 @@ export default function RootLayout({
         image: p.image
       }));
   });
+  return megaMenuProducts;
+}
+
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const megaMenuProducts = await getMegaMenuProducts();
 
   return (
     <html lang="en" suppressHydrationWarning>
