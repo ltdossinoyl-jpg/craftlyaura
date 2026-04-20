@@ -91,6 +91,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     const [product, setProduct] = useState<any>(null);
     const [allProducts, setAllProducts] = useState<any[]>([]);
     const [pageLoading, setPageLoading] = useState(true);
+    const [selectedVariations, setSelectedVariations] = useState<Record<string, string>>({});
+    const [mainImage, setMainImage] = useState('');
+    const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+    const [showNotifyPopup, setShowNotifyPopup] = useState(false);
 
     useEffect(() => {
         async function fetchData() {
@@ -102,6 +106,20 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 if (prodRes.ok) {
                     const prodData = await prodRes.json();
                     setProduct(prodData);
+
+                    // Initialize main image
+                    const imgs = prodData.images && prodData.images.length > 0 ? prodData.images : [prodData.image];
+                    setMainImage(imgs[0] || '');
+
+                    // Initialize variation selections
+                    const vTypes = prodData.variationTypes as Record<string, string[]> | undefined;
+                    if (vTypes) {
+                        const initSel: Record<string, string> = {};
+                        Object.entries(vTypes).forEach(([key, values]) => {
+                            if (values.length > 0) initSel[key] = values[0];
+                        });
+                        setSelectedVariations(initSel);
+                    }
                 }
                 if (allRes.ok) {
                     const allData = await allRes.json();
@@ -135,15 +153,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     const variations = (product as any).variations as Array<Record<string, string>> | undefined;
     const hasVariations = variationTypes && Object.keys(variationTypes).length > 0;
 
-    // Initialize selected variations with first value of each type
-    const initialSelections: Record<string, string> = {};
-    if (variationTypes) {
-        Object.entries(variationTypes).forEach(([key, values]) => {
-            if (values.length > 0) initialSelections[key] = values[0];
-        });
-    }
-    const [selectedVariations, setSelectedVariations] = useState<Record<string, string>>(initialSelections);
-
     // Find the matching variation for the current selection
     const findMatchingVariation = (selections: Record<string, string>) => {
         if (!variations) return null;
@@ -155,7 +164,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     const handleVariationChange = (type: string, value: string) => {
         const newSelections = { ...selectedVariations, [type]: value };
         setSelectedVariations(newSelections);
-        // If the matched variation has an image, update main image
         const matched = findMatchingVariation(newSelections);
         if (matched?.image) {
             setMainImage(matched.image);
@@ -164,9 +172,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
     // Prepare images array fallback
     const images = product.images && product.images.length > 0 ? product.images : [product.image];
-    const [mainImage, setMainImage] = useState(images[0]);
-    const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-    const [showNotifyPopup, setShowNotifyPopup] = useState(false);
     const isOutOfStock = !!(product as any).outOfStock;
 
     // Compute current price based on selected variation
