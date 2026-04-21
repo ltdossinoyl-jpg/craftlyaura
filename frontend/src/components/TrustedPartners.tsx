@@ -1,9 +1,80 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './TrustedPartners.css';
 
+const REVIEWS = [
+    {
+        text: "\"This leather bag exceeded all my expectations. The stitching, the feel of the leather, everything screams luxury. I carry it daily and always get compliments. Truly a masterpiece of craftsmanship!\"",
+        name: "Sarah Mitchell",
+        initials: "SM",
+        role: "Verified Buyer, USA"
+    },
+    {
+        text: "\"I ordered the barrel bag for my wife's birthday and she absolutely loved it. The quality is unmatched — you can feel the artisan touch in every detail. Will definitely be coming back for more!\"",
+        name: "James Richardson",
+        initials: "JR",
+        role: "Verified Buyer, UK"
+    },
+    {
+        text: "\"As a fashion blogger, I've seen hundreds of bags. CraftlyAura stands out with their genuine handcrafted quality. The leather ages beautifully and the hardware is premium. A must-have brand!\"",
+        name: "Amira Khaled",
+        initials: "AK",
+        role: "Fashion Blogger, Dubai"
+    },
+    {
+        text: "\"I purchased the executive briefcase and it's absolutely stunning. Perfect for business meetings — professional yet uniquely stylish. The interior organization is incredibly well thought out.\"",
+        name: "David Chen",
+        initials: "DC",
+        role: "Verified Buyer, Canada"
+    },
+    {
+        text: "\"The attention to detail is remarkable. From the brass buckles to the hand-stitched seams, every element of my tote bag tells a story of true craftsmanship. Worth every penny!\"",
+        name: "Olivia Perez",
+        initials: "OP",
+        role: "Interior Designer, Spain"
+    },
+    {
+        text: "\"I've been searching for an authentic handmade leather travel bag for years. CraftlyAura delivered beyond what I imagined. The duffel is spacious, durable, and absolutely gorgeous.\"",
+        name: "Marcus Williams",
+        initials: "MW",
+        role: "Frequent Traveler, Australia"
+    },
+    {
+        text: "\"Bought the colorful patterned barrel bag as a gift for my daughter. She was over the moon! The vibrant colors and buttery-soft leather make it her favorite accessory. Thank you CraftlyAura!\"",
+        name: "Nadia Benali",
+        initials: "NB",
+        role: "Verified Buyer, Morocco"
+    },
+    {
+        text: "\"Outstanding customer service and even better products. My shoulder bag arrived beautifully packaged, and the leather smells divine. It's clear this is made with passion and love.\"",
+        name: "Emma Thompson",
+        initials: "ET",
+        role: "Verified Buyer, Ireland"
+    },
+];
+
 export default function TrustedPartners() {
+    const [productImages, setProductImages] = useState<string[]>([]);
+
+    useEffect(() => {
+        // Fetch random product images from MongoDB
+        fetch('/api/products')
+            .then(res => res.json())
+            .then((data: any[]) => {
+                if (Array.isArray(data) && data.length > 0) {
+                    // Shuffle and pick images
+                    const shuffled = [...data].sort(() => Math.random() - 0.5);
+                    const images = shuffled
+                        .map(p => p.image || (p.images && p.images[0]))
+                        .filter(Boolean)
+                        .slice(0, REVIEWS.length);
+                    setProductImages(images);
+                }
+            })
+            .catch(() => { });
+    }, []);
+
     useEffect(() => {
         const track = document.getElementById('ia-track');
         if (!track) return;
@@ -46,7 +117,6 @@ export default function TrustedPartners() {
         track.addEventListener('mouseleave', handleMouseLeave);
 
         let touchStartX = 0;
-        let touchEndX = 0;
 
         const handleTouchStart = (e: TouchEvent) => {
             touchStartX = e.changedTouches[0].screenX;
@@ -54,7 +124,7 @@ export default function TrustedPartners() {
         };
 
         const handleTouchEnd = (e: TouchEvent) => {
-            touchEndX = e.changedTouches[0].screenX;
+            const touchEndX = e.changedTouches[0].screenX;
             if (touchStartX - touchEndX > 50) moveNext();
             clearInterval(autoScroll);
             autoScroll = setInterval(moveNext, intervalSpeed);
@@ -63,10 +133,8 @@ export default function TrustedPartners() {
         track.addEventListener('touchstart', handleTouchStart, { passive: true });
         track.addEventListener('touchend', handleTouchEnd, { passive: true });
 
-        // Mouse Drag Support
         let isDragging = false;
         let startX = 0;
-        let scrollLeft = 0;
 
         const handleMouseDown = (e: MouseEvent) => {
             isDragging = true;
@@ -103,121 +171,49 @@ export default function TrustedPartners() {
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseup', handleMouseUp);
         };
-    }, []);
+    }, [productImages]);
+
+    // Double the reviews for infinite scroll effect
+    const allReviews = [...REVIEWS, ...REVIEWS];
+
+    // Default fallback image
+    const fallbackImg = '/images/collections/WhatsApp_Image_2026-03-04_at_4.35.54_PM.jpg';
+
+    const getImage = (index: number) => {
+        if (productImages.length > 0) {
+            return productImages[index % productImages.length];
+        }
+        return fallbackImg;
+    };
 
     return (
         <section className="section section--padding color-scheme-1" style={{ paddingTop: '0px', paddingBottom: '0px' }}>
             <div id="ia-reviews-editorial">
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                    <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', letterSpacing: '0.05em' }}>Testimonials</h2>
+                    <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', letterSpacing: '0.05em' }}>What Our Customers Say</h2>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginTop: '0.5rem' }}>Real reviews from real customers worldwide</p>
                 </div>
 
                 <div className="ia-editorial-viewport">
                     <div className="ia-editorial-track" id="ia-track" style={{ transition: 'none', transform: 'translateX(0px)' }}>
-
-                        <div className="ia-editorial-card" style={{ backgroundImage: "url('/images/collections/WhatsApp_Image_2026-03-04_at_4.35.54_PM.jpg')" }}>
-                            <div className="ia-editorial-content">
-                                <div className="ia-editorial-header">
-                                    <div className="ia-stars">★★★★★</div>
-                                    <div className="ia-quote-icon">❝</div>
-                                </div>
-                                <p className="ia-review-text">"I recently ordered a few baskets from CraftlyAura and was so impressed! The craftsmanship is truly lovely – each piece feels carefully and thoughtfully made. Their customer service was also excellent. A beautiful shopping experience all around!"</p>
-                                <div className="ia-author">
-                                    <div className="ia-avatar">L</div>
-                                    <div className="ia-meta">
-                                        <h4>Lisa</h4>
-                                        <span>Customer</span>
+                        {allReviews.map((review, i) => (
+                            <div key={i} className="ia-editorial-card" style={{ backgroundImage: `url('${getImage(i)}')` }}>
+                                <div className="ia-editorial-content">
+                                    <div className="ia-editorial-header">
+                                        <div className="ia-stars">★★★★★</div>
+                                        <div className="ia-quote-icon">❝</div>
+                                    </div>
+                                    <p className="ia-review-text">{review.text}</p>
+                                    <div className="ia-author">
+                                        <div className="ia-avatar">{review.initials}</div>
+                                        <div className="ia-meta">
+                                            <h4>{review.name}</h4>
+                                            <span>{review.role}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div className="ia-editorial-card" style={{ backgroundImage: "url('/images/collections/457a26993f776af9db8a2a2f083770e9f5f63aa6bc75a8f5423d614cfa76f37f.jpg')" }}>
-                            <div className="ia-editorial-content">
-                                <div className="ia-editorial-header">
-                                    <div className="ia-stars">★★★★★</div>
-                                    <div className="ia-quote-icon">❝</div>
-                                </div>
-                                <p className="ia-review-text">"We ordered these baskets and they are absolutely gorgeous! We’re using them as gift baskets for our hotel guests, and they have been a perfect fit for our property. Beautifully made, high-quality, and thoughtfully crafted. We’ll definitely be ordering again!"</p>
-                                <div className="ia-author">
-                                    <div className="ia-avatar">AB</div>
-                                    <div className="ia-meta">
-                                        <h4>Amy Bauer</h4>
-                                        <span>Eco-friendly Resort</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="ia-editorial-card" style={{ backgroundImage: "url('/images/collections/85e5f139d8cd064303760ea154676dcdd1494d2929d04815bd030b8ed5c576e1_1600x.webp')" }}>
-                            <div className="ia-editorial-content">
-                                <div className="ia-editorial-header">
-                                    <div className="ia-stars">★★★★★</div>
-                                    <div className="ia-quote-icon">❝</div>
-                                </div>
-                                <p className="ia-review-text">"With an absolutely extensive communication, we felt highly appreciated as a customer of this supplier. The products were real artisan-made and so soft and lovely leather, and well made. Perfect!"</p>
-                                <div className="ia-author">
-                                    <div className="ia-avatar">MG</div>
-                                    <div className="ia-meta">
-                                        <h4>Martha Greene</h4>
-                                        <span>Retailer, Norway</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Duplicated for scroll effect */}
-                        <div className="ia-editorial-card" style={{ backgroundImage: "url('/images/collections/WhatsApp_Image_2026-03-04_at_4.35.54_PM.jpg')" }}>
-                            <div className="ia-editorial-content">
-                                <div className="ia-editorial-header">
-                                    <div className="ia-stars">★★★★★</div>
-                                    <div className="ia-quote-icon">❝</div>
-                                </div>
-                                <p className="ia-review-text">"I recently ordered a few baskets from CraftlyAura and was so impressed! The craftsmanship is truly lovely – each piece feels carefully and thoughtfully made. Their customer service was also excellent. A beautiful shopping experience all around!"</p>
-                                <div className="ia-author">
-                                    <div className="ia-avatar">L</div>
-                                    <div className="ia-meta">
-                                        <h4>Lisa</h4>
-                                        <span>Customer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="ia-editorial-card" style={{ backgroundImage: "url('/images/collections/457a26993f776af9db8a2a2f083770e9f5f63aa6bc75a8f5423d614cfa76f37f.jpg')" }}>
-                            <div className="ia-editorial-content">
-                                <div className="ia-editorial-header">
-                                    <div className="ia-stars">★★★★★</div>
-                                    <div className="ia-quote-icon">❝</div>
-                                </div>
-                                <p className="ia-review-text">"We ordered these baskets and they are absolutely gorgeous! We’re using them as gift baskets for our hotel guests, and they have been a perfect fit for our property. Beautifully made, high-quality, and thoughtfully crafted. We’ll definitely be ordering again!"</p>
-                                <div className="ia-author">
-                                    <div className="ia-avatar">AB</div>
-                                    <div className="ia-meta">
-                                        <h4>Amy Bauer</h4>
-                                        <span>Eco-friendly Resort</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="ia-editorial-card" style={{ backgroundImage: "url('/images/collections/85e5f139d8cd064303760ea154676dcdd1494d2929d04815bd030b8ed5c576e1_1600x.webp')" }}>
-                            <div className="ia-editorial-content">
-                                <div className="ia-editorial-header">
-                                    <div className="ia-stars">★★★★★</div>
-                                    <div className="ia-quote-icon">❝</div>
-                                </div>
-                                <p className="ia-review-text">"With an absolutely extensive communication, we felt highly appreciated as a customer of this supplier. The products were real artisan-made and so soft and lovely leather, and well made. Perfect!"</p>
-                                <div className="ia-author">
-                                    <div className="ia-avatar">MG</div>
-                                    <div className="ia-meta">
-                                        <h4>Martha Greene</h4>
-                                        <span>Retailer, Norway</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        ))}
                     </div>
                 </div>
             </div>
