@@ -27,8 +27,8 @@ export async function GET(req: Request) {
             return NextResponse.json({ error: 'Product not found' }, { status: 404 });
         }
 
-        // Fetch all products
-        const products = await Product.find({}).lean();
+        // Fetch all products, excluding drafts
+        const products = await Product.find({ status: { $ne: 'draft' } }).lean();
         if (products && products.length > 0) {
             return NextResponse.json(products);
         }
@@ -52,7 +52,8 @@ export async function GET(req: Request) {
                 return p ? NextResponse.json(p) : NextResponse.json({ error: 'Not found' }, { status: 404 });
             }
 
-            return NextResponse.json(arr);
+            const publishedOnly = arr.filter((p: any) => p.status !== 'draft');
+            return NextResponse.json(publishedOnly);
         } catch {
             return NextResponse.json({ error: 'Failed to load products' }, { status: 500 });
         }

@@ -1,0 +1,357 @@
+.authContainer {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    background: #f8fafc;
+}
+
+.authBox {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.authTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.authSubtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.errorMsg {
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border: 1px solid #fecaca;
+}
+
+.formGroup {
+    margin-bottom: 1.25rem;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formGroup input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+.btnPrimary {
+    width: 100%;
+    padding: 0.875rem;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s;
+}
+
+.btnPrimary:hover {
+    opacity: 0.9;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.divider span {
+    padding: 0 1rem;
+}
+
+.btnGoogle {
+    width: 100%;
+    padding: 0.875rem;
+    background: white;
+    color: #374151;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: background 0.2s;
+}
+
+.btnGoogle:hover {
+    background: #f9fafb;
+}
+
+.toggleMode {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.toggleMode button {
+    background: none;
+    border: none;
+    color: #4f46e5;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+
+.toggleMode button:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Styles */
+.dashboardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 6rem;
+}
+
+.dashHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #eef2ff;
+    object-fit: cover;
+}
+
+.userInfo h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 0.25rem;
+}
+
+.userInfo p {
+    color: #6b7280;
+    margin: 0;
+}
+
+.btnLogout {
+    padding: 0.6rem 1.25rem;
+    border: 1px solid #e5e7eb;
+    background: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btnLogout:hover {
+    background: #f3f4f6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.cardIcon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+}
+
+.cardDesc {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.pointsDisplay {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.pointsNum {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #4f46e5;
+    line-height: 1;
+}
+
+.pointsLabel {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #9ca3af;
+}
+
+.btnAction {
+    width: 100%;
+    padding: 0.875rem;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btnAction:disabled {
+    background: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.btnAction:not(:disabled):hover {
+    opacity: 0.9;
+}
+
+.btnSecondary {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0.875rem;
+    background: #f9fafb;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btnSecondary:hover {
+    background: #f3f4f6;
+}
+
+.couponBox {
+    background: #ecfdf5;
+    border: 1px dashed #10b981;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #065f46;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.couponBox code {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: white;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    user-select: all;
+}
+
+.referralBox {
+    background: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.referralBox strong {
+    font-family: monospace;
+    font-size: 1.15rem;
+    color: #4f46e5;
+    user-select: all;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+}
+
+.statsGrid h4 {
+    margin: 0 0 0.25rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.statsGrid span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+}

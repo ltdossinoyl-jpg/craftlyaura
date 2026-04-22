@@ -95,6 +95,7 @@
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  height: calc(100vh - 4rem);
 }
 
 /* Sidebar */
@@ -221,6 +222,7 @@
   flex: 1;
   padding: 2rem;
   overflow-y: auto;
+  height: 100%;
 }
 
 .emptyState {
