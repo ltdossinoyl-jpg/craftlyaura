@@ -3,8 +3,8 @@ import Link from 'next/link';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Our Story | craftlyaura',
-    description: 'Discover the heritage, craftsmanship, and passion behind craftlyaura.',
+    title: 'Our Story | CRAFTLY AURA',
+    description: 'Discover the heritage, craftsmanship, and passion behind CRAFTLY AURA.',
 };
 
 export default function OurStoryPage() {
@@ -14,7 +14,7 @@ export default function OurStoryPage() {
                 <span className={styles.badge}>Our Heritage</span>
                 <h1 className={styles.pageTitle}>Where Tradition Meets Modern Living</h1>
                 <p className={styles.subtitle}>
-                    Based in the heart of Marrakech, craftlyaura brings the soul of Moroccan craftsmanship to the global stage, specializing in authentic handwoven bags, baskets, and artisanal ceramics.
+                    Based in the heart of Marrakech, CRAFTLY AURA brings the soul of Moroccan craftsmanship to the global stage, specializing in authentic handwoven bags, baskets, and artisanal ceramics.
                 </p>
             </div>
 
@@ -22,7 +22,7 @@ export default function OurStoryPage() {
                 <div className={styles.section}>
                     <h2 className={styles.sectionTitle}>Our Roots</h2>
                     <p className={styles.sectionText}>
-                        craftlyaura was born in the vibrant souks and quiet artisan quarters of Marrakech. Our mission is simple: to share the extraordinary artistry of Moroccan makers with the world. From the nimble hands weaving natural straw to the master potters shaping local clay, each product is a testament to a living heritage.
+                        CRAFTLY AURA was born in the vibrant souks and quiet artisan quarters of Marrakech. Our mission is simple: to share the extraordinary artistry of Moroccan makers with the world. From the nimble hands weaving natural straw to the master potters shaping local clay, each product is a testament to a living heritage.
                     </p>
                     <p className={styles.sectionText}>
                         Every bag, basket, and ceramic piece carries the story of its creation — the sun-dried fibers, the natural dyes, and the generations of ancestral knowledge that define Moroccan artisanal excellence.

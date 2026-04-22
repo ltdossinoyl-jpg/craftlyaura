@@ -201,7 +201,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     const formatText = (text: string) => {
         return text
             .replace(/&amp;/g, ' / ')
-            .replace(/Insideast/gi, 'craftlyaura')
+            .replace(/Insideast/gi, 'CRAFTLY AURA')
             .replace(/contact@insideast\.com/gi, 'contact@craftlyaura.com')
             .replace(/insideast\.com/gi, 'craftlyaura.com');
     };

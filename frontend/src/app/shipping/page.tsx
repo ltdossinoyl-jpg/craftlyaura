@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Shipping Terms | craftlyaura',
+    title: 'Shipping Terms | CRAFTLY AURA',
     description: 'Learn about our worldwide shipping policies, delivery times, and tracking.',
 };
 
@@ -22,7 +22,7 @@ export default function ShippingPage() {
                 <div className={styles.section}>
                     <h2 className={styles.sectionTitle}>Free Worldwide Shipping</h2>
                     <p className={styles.sectionText}>
-                        craftlyaura offers <strong>free shipping</strong> on all orders, worldwide. There are no hidden fees or minimum order requirements. Every piece is carefully packaged and shipped directly from our workshop.
+                        CRAFTLY AURA offers <strong>free shipping</strong> on all orders, worldwide. There are no hidden fees or minimum order requirements. Every piece is carefully packaged and shipped directly from our workshop.
                     </p>
                 </div>
 

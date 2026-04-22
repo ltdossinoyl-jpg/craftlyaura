@@ -72,7 +72,7 @@ export default function AdminLoginPage() {
                         Admin Access
                     </h1>
                     <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.875rem', margin: 0 }}>
-                        CraftlyAura Dashboard
+                        CRAFTLY AURA Dashboard
                     </p>
                 </div>
 

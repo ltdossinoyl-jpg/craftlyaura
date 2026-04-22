@@ -9,7 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'craftly aura | Sophisticated Artisanal Decor',
+  title: 'CRAFTLY AURA | Sophisticated Artisanal Decor',
   description: 'Handcrafted luxury derived from cultural heritage. Brass sinks, copper lighting, curated collections.',
   icons: {
     icon: '/logo.svg',

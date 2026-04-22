@@ -2,8 +2,8 @@ import React from 'react';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Privacy Policy | craftlyaura',
-    description: 'How craftlyaura collects, uses, and protects your personal information.',
+    title: 'Privacy Policy | CRAFTLY AURA',
+    description: 'How CRAFTLY AURA collects, uses, and protects your personal information.',
 };
 
 export default function PrivacyPage() {

@@ -61,7 +61,7 @@ export default function ChatWidget() {
             // Initial AI Greeting
             const welcomeMsg: Message = {
                 id: uuidv4(),
-                text: "Hi there! I'm Sara from craftly aura. I can help you choose the perfect bag or decor piece 😊",
+                text: "Hi there! I'm Sara from CRAFTLY AURA. I can help you choose the perfect bag or decor piece 😊",
                 sender: 'ai',
                 timestamp: Date.now()
             };
@@ -250,7 +250,7 @@ export default function ChatWidget() {
         // Setup initial greeting again
         const welcomeMsg: Message = {
             id: uuidv4(),
-            text: "Hi there! I'm Sara from craftly aura. I can help you choose the perfect bag or decor piece 😊",
+            text: "Hi there! I'm Sara from CRAFTLY AURA. I can help you choose the perfect bag or decor piece 😊",
             sender: 'ai',
             timestamp: Date.now()
         };

@@ -84,7 +84,7 @@ export default function Navbar({ megaMenuProducts = {} }: NavbarProps) {
             <div className={styles.stickyBox}>
                 <div className={styles.logoSection}>
                     <Link href="/" className={styles.logo}>
-                        <img src={settingsData.logo || '/logo.svg'} alt="craftly aura Logo" className={styles.logoImage} />
+                        <img src={settingsData.logo || '/logo.svg'} alt="CRAFTLY AURA Logo" className={styles.logoImage} />
                     </Link>
                 </div>
 
@@ -92,7 +92,7 @@ export default function Navbar({ megaMenuProducts = {} }: NavbarProps) {
                     <div className={`container ${styles.topContainer}`}>
                         <div className={styles.mobileLogoBox}>
                             <Link href="/" className={styles.mobileLogo}>
-                                <img src={settingsData.logo || '/logo.svg'} alt="craftly aura Logo" className={styles.logoImageMobile} />
+                                <img src={settingsData.logo || '/logo.svg'} alt="CRAFTLY AURA Logo" className={styles.logoImageMobile} />
                             </Link>
                         </div>
 

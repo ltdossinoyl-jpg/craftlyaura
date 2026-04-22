@@ -2,8 +2,8 @@ import React from 'react';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Warranty | craftlyaura',
-    description: 'Comprehensive warranty coverage for all craftlyaura products.',
+    title: 'Warranty | CRAFTLY AURA',
+    description: 'Comprehensive warranty coverage for all CRAFTLY AURA products.',
 };
 
 export default function WarrantyPage() {
@@ -47,7 +47,7 @@ export default function WarrantyPage() {
                     <p>
                         <strong>🛡️ Our Promise</strong>
                         <br /><br />
-                        If any craftlyaura product proves defective within the warranty period, we will repair or replace it at our discretion, free of charge. We're so confident in our craftsmanship that the risk is entirely on us.
+                        If any CRAFTLY AURA product proves defective within the warranty period, we will repair or replace it at our discretion, free of charge. We're so confident in our craftsmanship that the risk is entirely on us.
                     </p>
                 </div>
 

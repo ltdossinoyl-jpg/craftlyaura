@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const metadata = {
-    title: 'Trade Program | craftly aura',
+    title: 'Trade Program | CRAFTLY AURA',
     description: 'Join our Trade Program for interior designers and contractors.',
 };
 

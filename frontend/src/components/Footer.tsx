@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className={styles.grid}>
                     <div className={styles.brand}>
                         <Link href="/">
-                            <img src="/logo.svg" alt="craftly aura" className={styles.footerLogo} />
+                            <img src="/logo.svg" alt="CRAFTLY AURA" className={styles.footerLogo} />
                         </Link>
                         <p className={styles.description} style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
                             {settingsData.footerDescription || 'Offering authentic Moroccan products, handmade by local artisans in Marrakech. Inspired by tradition and made using sustainable practices.'}
@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.bottom}>
-                    <p>&copy; {new Date().getFullYear()} craftly aura. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} CRAFTLY AURA. All rights reserved.</p>
                 </div>
             </div>
         </footer>

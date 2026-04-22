@@ -17,7 +17,7 @@ const REVIEWS = [
         role: "Verified Buyer, UK"
     },
     {
-        text: "\"As a fashion blogger, I've seen hundreds of bags. CraftlyAura stands out with their genuine handcrafted quality. The leather ages beautifully and the hardware is premium. A must-have brand!\"",
+        text: "\"As a fashion blogger, I've seen hundreds of bags. CRAFTLY AURA stands out with their genuine handcrafted quality. The leather ages beautifully and the hardware is premium. A must-have brand!\"",
         name: "Amira Khaled",
         initials: "AK",
         role: "Fashion Blogger, Dubai"
@@ -35,13 +35,13 @@ const REVIEWS = [
         role: "Interior Designer, Spain"
     },
     {
-        text: "\"I've been searching for an authentic handmade leather travel bag for years. CraftlyAura delivered beyond what I imagined. The duffel is spacious, durable, and absolutely gorgeous.\"",
+        text: "\"I've been searching for an authentic handmade leather travel bag for years. CRAFTLY AURA delivered beyond what I imagined. The duffel is spacious, durable, and absolutely gorgeous.\"",
         name: "Marcus Williams",
         initials: "MW",
         role: "Frequent Traveler, Australia"
     },
     {
-        text: "\"Bought the colorful patterned barrel bag as a gift for my daughter. She was over the moon! The vibrant colors and buttery-soft leather make it her favorite accessory. Thank you CraftlyAura!\"",
+        text: "\"Bought the colorful patterned barrel bag as a gift for my daughter. She was over the moon! The vibrant colors and buttery-soft leather make it her favorite accessory. Thank you CRAFTLY AURA!\"",
         name: "Nadia Benali",
         initials: "NB",
         role: "Verified Buyer, Morocco"

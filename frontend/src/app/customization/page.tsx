@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Customization | craftlyaura',
+    title: 'Customization | CRAFTLY AURA',
     description: 'Create bespoke brass and copper pieces tailored to your exact specifications.',
 };
 

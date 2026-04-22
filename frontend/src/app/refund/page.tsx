@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Refund Policy | craftlyaura',
+    title: 'Refund Policy | CRAFTLY AURA',
     description: 'Our fair and transparent refund and return policy.',
 };
 

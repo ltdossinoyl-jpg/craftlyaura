@@ -3,8 +3,8 @@ import Link from 'next/link';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Customer Reviews | craftlyaura',
-    description: 'Read what our customers say about their craftlyaura experience.',
+    title: 'Customer Reviews | CRAFTLY AURA',
+    description: 'Read what our customers say about their CRAFTLY AURA experience.',
 };
 
 export default function ReviewsPage() {
@@ -29,7 +29,7 @@ export default function ReviewsPage() {
                 <span className={styles.badge}>Testimonials</span>
                 <h1 className={styles.pageTitle}>What Our Customers Say</h1>
                 <p className={styles.subtitle}>
-                    Real stories from real customers who have transformed their spaces with craftlyaura artisan pieces.
+                    Real stories from real customers who have transformed their spaces with CRAFTLY AURA artisan pieces.
                 </p>
             </div>
 

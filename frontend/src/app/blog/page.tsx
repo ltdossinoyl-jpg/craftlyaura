@@ -3,8 +3,8 @@ import Link from 'next/link';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Blog | craftlyaura',
-    description: 'Explore articles on brass care, interior design, and artisan stories from craftlyaura.',
+    title: 'Blog | CRAFTLY AURA',
+    description: 'Explore articles on brass care, interior design, and artisan stories from CRAFTLY AURA.',
 };
 
 export default function BlogPage() {
@@ -51,7 +51,7 @@ export default function BlogPage() {
         <div className={`container ${styles.page}`}>
             <div className={styles.hero}>
                 <span className={styles.badge}>Journal</span>
-                <h1 className={styles.pageTitle}>The craftlyaura Blog</h1>
+                <h1 className={styles.pageTitle}>The CRAFTLY AURA Blog</h1>
                 <p className={styles.subtitle}>
                     Stories of craftsmanship, design inspiration, and practical guides for living with artisan brass.
                 </p>

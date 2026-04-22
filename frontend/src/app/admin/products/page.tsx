@@ -272,7 +272,7 @@ export default function AdvancedAdminDashboard() {
             <header className={styles.header}>
                 <div className={styles.logoArea}>
                     <div className={styles.logoIcon}>CA</div>
-                    <h1 className={styles.headerTitle}>CraftlyAura Admin</h1>
+                    <h1 className={styles.headerTitle}>CRAFTLY AURA Admin</h1>
 
                     <div style={{ marginLeft: '2rem', display: 'flex', gap: '1rem' }}>
                         <button

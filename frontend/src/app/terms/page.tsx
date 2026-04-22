@@ -2,8 +2,8 @@ import React from 'react';
 import styles from '../info.module.css';
 
 export const metadata = {
-    title: 'Terms of Service | craftlyaura',
-    description: 'Read the terms and conditions governing your use of craftlyaura.',
+    title: 'Terms of Service | CRAFTLY AURA',
+    description: 'Read the terms and conditions governing your use of CRAFTLY AURA.',
 };
 
 export default function TermsPage() {
@@ -21,7 +21,7 @@ export default function TermsPage() {
                 <div className={styles.section}>
                     <h2 className={styles.sectionTitle}>1. Acceptance of Terms</h2>
                     <p className={styles.sectionText}>
-                        By accessing or using the craftlyaura website (craftlyaura.com), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access the website or make purchases.
+                        By accessing or using the CRAFTLY AURA website (craftlyaura.com), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access the website or make purchases.
                     </p>
                 </div>
 
@@ -45,7 +45,7 @@ export default function TermsPage() {
                 <div className={styles.section}>
                     <h2 className={styles.sectionTitle}>4. Shipping & Delivery</h2>
                     <p className={styles.sectionText}>
-                        Delivery times are estimates and may vary based on your location and product availability. craftlyaura is not responsible for delays caused by customs processing, weather events, or carrier issues. Risk of loss transfers to you upon delivery to the carrier.
+                        Delivery times are estimates and may vary based on your location and product availability. CRAFTLY AURA is not responsible for delays caused by customs processing, weather events, or carrier issues. Risk of loss transfers to you upon delivery to the carrier.
                     </p>
                 </div>
 
@@ -59,14 +59,14 @@ export default function TermsPage() {
                 <div className={styles.section}>
                     <h2 className={styles.sectionTitle}>6. Intellectual Property</h2>
                     <p className={styles.sectionText}>
-                        All content on this website — including text, images, product designs, logos, and graphics — is the property of craftlyaura and is protected by intellectual property laws. You may not reproduce, distribute, or use any content without our prior written consent.
+                        All content on this website — including text, images, product designs, logos, and graphics — is the property of CRAFTLY AURA and is protected by intellectual property laws. You may not reproduce, distribute, or use any content without our prior written consent.
                     </p>
                 </div>
 
                 <div className={styles.section}>
                     <h2 className={styles.sectionTitle}>7. Limitation of Liability</h2>
                     <p className={styles.sectionText}>
-                        craftlyaura shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the specific product giving rise to the claim.
+                        CRAFTLY AURA shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the specific product giving rise to the claim.
                     </p>
                 </div>
 

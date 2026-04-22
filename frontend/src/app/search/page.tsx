@@ -10,7 +10,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
     const params = await searchParams;
     const query = params.q || '';
     return {
-        title: `Search Results for "${query}" | craftly aura`,
+        title: `Search Results for "${query}" | CRAFTLY AURA`,
     };
 }
 
