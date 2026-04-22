@@ -9,7 +9,7 @@ export default function CatalogPage() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/api/products')
+        fetch('/api/products?t=' + Date.now())
             .then(res => res.json())
             .then(data => {
                 setProducts(Array.isArray(data) ? data : []);

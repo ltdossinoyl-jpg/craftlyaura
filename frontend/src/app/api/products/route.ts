@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { connectDB } from '@/lib/mongodb';
 import { Product } from '@/models/Product';
+export const dynamic = 'force-dynamic';
 
 // Public API: fetch all products from MongoDB (with fallback to static JSON)
 export async function GET(req: Request) {
