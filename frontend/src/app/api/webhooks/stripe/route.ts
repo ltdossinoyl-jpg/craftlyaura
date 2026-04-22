@@ -1,15 +1,9 @@
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
-import { createClient } from '@supabase/supabase-js';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: '2026-02-25.clover',
 });
-
-const supabaseAdmin = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
 
 export async function POST(request: Request) {
     const body = await request.text();
@@ -32,12 +26,8 @@ export async function POST(request: Request) {
         const userId = session.metadata?.user_id;
 
         if (userId) {
-            await supabaseAdmin.from('orders').insert({
-                user_id: userId !== 'guest' ? userId : null,
-                status: 'completed',
-                total_amount: session.amount_total ? session.amount_total / 100 : 0,
-                stripe_session_id: session.id,
-            });
+            console.log(`Order completed for user ${userId}. Amount: ${session.amount_total}`);
+            // MongoDB integration point for Orders
         }
     }
 
