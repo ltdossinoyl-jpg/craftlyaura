@@ -1,7 +1,10 @@
-import { getCategoryBySlug, getProductsByCategory } from '@/lib/categories';
+import { getCategoryBySlug } from '@/lib/categories';
 import ProductCard from '@/components/ProductCard';
 import { notFound } from 'next/navigation';
 import styles from '@/app/page.module.css';
+import { connectDB } from '@/lib/mongodb';
+import { Product } from '@/models/Product';
+export const dynamic = 'force-dynamic';
 
 export default async function CategoryPage({ params }: { params: { slug: string } }) {
     // Note: in Next.js 15, route params must be awaited
@@ -12,7 +15,25 @@ export default async function CategoryPage({ params }: { params: { slug: string 
         notFound();
     }
 
-    const products = getProductsByCategory(slug);
+    let productsData: any[] = [];
+    try {
+        await connectDB();
+        productsData = await Product.find({ status: { $ne: 'draft' } }).lean();
+        productsData = JSON.parse(JSON.stringify(productsData));
+    } catch {
+        const fs = await import('fs');
+        const path = await import('path');
+        const dataPath = path.join(process.cwd(), 'src/data/products.json');
+        const data = fs.readFileSync(dataPath, 'utf8');
+        productsData = JSON.parse(data).filter((p: any) => p.status !== 'draft');
+    }
+
+    const matchTerms = (category.matches || '').toLowerCase().split(',').map((t: string) => t.trim()).filter(Boolean);
+    const products = productsData.filter(p => {
+        const title = (p.title || '').toLowerCase();
+        const catg = (p.category || '').toLowerCase();
+        return matchTerms.some((term: string) => title.includes(term) || catg.includes(term));
+    });
 
     return (
         <div style={{ paddingTop: '120px', paddingBottom: '6rem', minHeight: '80vh' }}>

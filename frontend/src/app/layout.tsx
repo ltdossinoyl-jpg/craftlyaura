@@ -22,6 +22,8 @@ import settingsData from '@/data/settings.json';
 
 import ChatWidget from '@/components/chat/ChatWidget';
 
+export const dynamic = 'force-dynamic';
+
 async function getMegaMenuProducts() {
   let products: any[];
   try {
@@ -29,8 +31,11 @@ async function getMegaMenuProducts() {
     products = await Product.find({}).lean();
     products = JSON.parse(JSON.stringify(products));
   } catch {
-    const productsJson = await import('@/data/products.json');
-    products = productsJson.default;
+    const fs = await import('fs');
+    const path = await import('path');
+    const dataPath = path.join(process.cwd(), 'src/data/products.json');
+    const data = fs.readFileSync(dataPath, 'utf8');
+    products = JSON.parse(data);
   }
 
   const megaMenuProducts: Record<string, any[]> = {};

@@ -35,14 +35,21 @@ export async function GET(req: Request) {
         }
 
         // Fallback to static JSON
-        const productsData = await import('@/data/products.json');
-        return NextResponse.json(productsData.default);
+        const fs = await import('fs');
+        const path = await import('path');
+        const dataPath = path.join(process.cwd(), 'src/data/products.json');
+        const data = fs.readFileSync(dataPath, 'utf8');
+        const productsData = JSON.parse(data);
+        return NextResponse.json(productsData);
     } catch (error) {
         console.error('Products API error:', error);
         // Fallback to static JSON
         try {
-            const productsData = await import('@/data/products.json');
-            const arr = productsData.default;
+            const fs = await import('fs');
+            const path = await import('path');
+            const dataPath = path.join(process.cwd(), 'src/data/products.json');
+            const data = fs.readFileSync(dataPath, 'utf8');
+            const arr = JSON.parse(data);
 
             if (productId) {
                 const p = arr.find((item: any) => item.id == productId);

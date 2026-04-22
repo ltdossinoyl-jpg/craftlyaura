@@ -7,6 +7,7 @@ import TrustedPartners from '@/components/TrustedPartners';
 import styles from './page.module.css';
 import { connectDB } from '@/lib/mongodb';
 import { Product } from '@/models/Product';
+export const dynamic = 'force-dynamic';
 
 async function getFeaturedProducts() {
   try {
@@ -14,8 +15,11 @@ async function getFeaturedProducts() {
     const products = await Product.find({}).lean();
     return JSON.parse(JSON.stringify(products));
   } catch {
-    const productsJson = await import('@/data/products.json');
-    return productsJson.default;
+    const fs = await import('fs');
+    const path = await import('path');
+    const dataPath = path.join(process.cwd(), 'src/data/products.json');
+    const data = fs.readFileSync(dataPath, 'utf8');
+    return JSON.parse(data);
   }
 }
 

@@ -20,8 +20,11 @@ async function getProducts() {
         const products = await Product.find({}).lean();
         return JSON.parse(JSON.stringify(products));
     } catch {
-        const productsData = await import('@/data/products.json');
-        return productsData.default;
+        const fs = await import('fs');
+        const path = await import('path');
+        const dataPath = path.join(process.cwd(), 'src/data/products.json');
+        const data = fs.readFileSync(dataPath, 'utf8');
+        return JSON.parse(data);
     }
 }
 
