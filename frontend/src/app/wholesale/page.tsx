@@ -22,38 +22,34 @@ export default function WholesalePage() {
                 </div>
             </section>
 
-            <section className={styles.faireSection}>
+            <section className={styles.partnerSection}>
                 <div className="container">
-                    <div className={styles.faireLayout}>
-                        <div className={styles.faireContent}>
-                            <h2 className={styles.faireTitle}>Exclusive Collaboration with Faire</h2>
-                            <p className={styles.faireDescription}>
-                                We are excited to announce our upcoming wholesale portal in collaboration with <strong>Faire</strong>.
+                    <div className={styles.partnerLayout} style={{ display: 'block', textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+                        <div className={styles.partnerContent}>
+                            <h2 className={styles.partnerTitle}>Direct B2B Partnership</h2>
+                            <p className={styles.partnerDescription} style={{ margin: '1rem auto', maxWidth: '600px' }}>
+                                We are excited to announce our upcoming direct wholesale portal.
                                 We are currently preparing our inventory to offer you the best of Moroccan artisanal heritage with
-                                the seamless ordering experience you love.
+                                seamless direct ordering and competitive volume pricing.
                             </p>
-                            <div className={styles.perks}>
+                            <div className={styles.perks} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginTop: '2rem' }}>
                                 <div className={styles.perk}>
                                     <span className={styles.perkIcon}>✨</span>
-                                    <span>Net 60 Terms for eligible retailers</span>
+                                    <span>Dedicated B2B Support</span>
                                 </div>
                                 <div className={styles.perk}>
                                     <span className={styles.perkIcon}>📦</span>
-                                    <span>Low minimum orders</span>
+                                    <span>Flexible minimum orders</span>
                                 </div>
                                 <div className={styles.perk}>
                                     <span className={styles.perkIcon}>🌎</span>
                                     <span>Global shipping from our workshop</span>
                                 </div>
                             </div>
-                            <div className={styles.ctaWrapper}>
+                            <div className={styles.ctaWrapper} style={{ marginTop: '3rem' }}>
                                 <p className={styles.waitingText}>Want to be notified when we launch?</p>
                                 <Link href="/contact" className={styles.notifyBtn}>Contact Us</Link>
                             </div>
-                        </div>
-                        <div className={styles.faireLogoBox}>
-                            <img src="https://layoffstracker.com/wp-content/uploads/2023/11/Faire_layoffs.jpg" alt="Faire Logo" className={styles.faireLogo} />
-                            <p className={styles.faireTagline}>Our Official Wholesale Partner</p>
                         </div>
                     </div>
                 </div>

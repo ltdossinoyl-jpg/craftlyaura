@@ -160,6 +160,26 @@ export default function AccountOverviewPage() {
                     </div>
                 </div>
             </div>
+
+            {/* Fidelity System Instructions */}
+            <div className={styles.instructionsSection} style={{ marginTop: '3rem', backgroundColor: 'white', padding: '2rem', borderRadius: '1rem', border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, margin: '0 0 1rem 0' }}>📖 How Our Fidelity Program Works</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', color: '#4b5563', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                    <div>
+                        <strong style={{ color: '#111827', display: 'block', marginBottom: '0.5rem' }}>1. Earn Points</strong>
+                        You get exactly <strong>10 Points</strong> for every $1 USD you spend in our store. You also earn a 100 points welcome bonus simply by creating an account, and 500 points for every successful referral.
+                    </div>
+                    <div>
+                        <strong style={{ color: '#111827', display: 'block', marginBottom: '0.5rem' }}>2. Redeem Rewards</strong>
+                        Once you accumulate <strong>1,000 Points</strong>, you can click the redeem button above to securely unlock an automatic $50 VIP discount code that you can apply immediately at checkout!
+                    </div>
+                    <div>
+                        <strong style={{ color: '#111827', display: 'block', marginBottom: '0.5rem' }}>3. VIP Progression</strong>
+                        Members who reach over 5,000 points automatically unlock the "The One & Only" exclusive collection, gaining VIP access to bespoke, limited-run Moroccan artisan masterpieces.
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 }
