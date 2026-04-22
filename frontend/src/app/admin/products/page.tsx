@@ -447,6 +447,7 @@ export default function AdvancedAdminDashboard() {
                                                         <div className={styles.productTitle}>{p.title || 'Untitled Product'}</div>
                                                         <div className={styles.productSubtitle}>
                                                             {p.category} • <span className={styles.priceTag}>£{p.price}</span>
+                                                            {p.status === 'draft' && <span style={{ marginLeft: "0.5rem", padding: "0.15rem 0.4rem", background: "#fef9c3", color: "#ca8a04", border: "1px solid #fde047", borderRadius: "4px", fontSize: "0.6rem", fontWeight: 700, textTransform: "uppercase" }}>Draft</span>}
                                                         </div>
                                                     </div>
                                                 </button>
@@ -517,6 +518,17 @@ export default function AdvancedAdminDashboard() {
                                                         value={activeProd.category || ""}
                                                         onChange={(e) => updateActiveProduct('category', e.target.value)}
                                                     />
+                                                </div>
+                                                <div className={styles.formGroup}>
+                                                    <label>Status</label>
+                                                    <select
+                                                        value={activeProd.status || 'published'}
+                                                        onChange={(e) => updateActiveProduct('status', e.target.value)}
+                                                        style={{ padding: '0.65rem', borderRadius: '0.375rem', border: '1px solid #d1d5db', width: '100%', background: '#fff', fontSize: '0.9rem', cursor: 'pointer' }}
+                                                    >
+                                                        <option value="published">🟢 Published (Live)</option>
+                                                        <option value="draft">🟡 Draft (Hidden)</option>
+                                                    </select>
                                                 </div>
                                             </div>
 

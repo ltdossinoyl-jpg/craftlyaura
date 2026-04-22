@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'craftly aura | Sophisticated Artisanal Decor',
   description: 'Handcrafted luxury derived from cultural heritage. Brass sinks, copper lighting, curated collections.',
   icons: {
-    icon: '/icon.svg',
+    icon: '/logo.svg',
   },
 };
 
