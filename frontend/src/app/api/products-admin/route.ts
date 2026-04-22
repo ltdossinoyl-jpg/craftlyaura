@@ -35,9 +35,19 @@ export async function POST(req: Request) {
         }
 
         return NextResponse.json({ error: 'Expected an array of products' }, { status: 400 });
+        return NextResponse.json({ error: 'Expected an array of products' }, { status: 400 });
     } catch (error) {
-        console.error('Failed to save products to MongoDB:', error);
-        return NextResponse.json({ error: 'Failed to write products' }, { status: 500 });
+        console.error('Failed to save products to MongoDB, attempting local JSON fallback:', error);
+        try {
+            const fs = await import('fs');
+            const path = await import('path');
+            const dataPath = path.join(process.cwd(), 'src/data/products.json');
+            fs.writeFileSync(dataPath, JSON.stringify(await req.clone().json(), null, 4), 'utf8');
+            return NextResponse.json({ success: true, message: 'Products saved to local JSON successfully (MongoDB fallback)' });
+        } catch (fsError) {
+            console.error('Fallback failed:', fsError);
+            return NextResponse.json({ error: 'Failed to write products to database and fallback failed' }, { status: 500 });
+        }
     }
 }
 
@@ -53,9 +63,25 @@ export async function DELETE(req: Request) {
         }
 
         await Product.deleteOne({ id: productId });
+        await Product.deleteOne({ id: productId });
         return NextResponse.json({ success: true, message: 'Product deleted' });
     } catch (error) {
-        console.error('Failed to delete product:', error);
-        return NextResponse.json({ error: 'Failed to delete product' }, { status: 500 });
+        console.error('Failed to delete product from MongoDB, attempting local JSON fallback:', error);
+        try {
+            const { searchParams } = new URL(req.url);
+            const productId = searchParams.get('id');
+            const fs = await import('fs');
+            const path = await import('path');
+            const dataPath = path.join(process.cwd(), 'src/data/products.json');
+
+            const data = fs.readFileSync(dataPath, 'utf8');
+            let products = JSON.parse(data);
+            products = products.filter((p: any) => p.id !== productId);
+            fs.writeFileSync(dataPath, JSON.stringify(products, null, 4), 'utf8');
+
+            return NextResponse.json({ success: true, message: 'Product deleted locally (MongoDB fallback)' });
+        } catch (fsError) {
+            return NextResponse.json({ error: 'Failed to delete product both in DB and locally' }, { status: 500 });
+        }
     }
 }

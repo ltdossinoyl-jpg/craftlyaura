@@ -41,7 +41,18 @@ export async function GET(req: Request) {
         // Fallback to static JSON
         try {
             const productsData = await import('@/data/products.json');
-            return NextResponse.json(productsData.default);
+            const arr = productsData.default;
+
+            if (productId) {
+                const p = arr.find((item: any) => item.id == productId);
+                return p ? NextResponse.json(p) : NextResponse.json({ error: 'Not found' }, { status: 404 });
+            }
+            if (productSlug) {
+                const p = arr.find((item: any) => item.slug == productSlug);
+                return p ? NextResponse.json(p) : NextResponse.json({ error: 'Not found' }, { status: 404 });
+            }
+
+            return NextResponse.json(arr);
         } catch {
             return NextResponse.json({ error: 'Failed to load products' }, { status: 500 });
         }

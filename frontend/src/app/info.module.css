@@ -84,8 +84,8 @@
 /* Feature Grid */
 .featureGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -325,11 +325,78 @@
 
 @media (max-width: 768px) {
     .page {
-        padding: 3rem 0 4rem;
+        padding: 2rem 0 3rem;
+    }
+
+    .hero {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .pageTitle {
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .section {
+        margin-bottom: 2.5rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .sectionText {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .highlightBox {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        text-align: center;
     }
 
     .featureGrid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .featureCard {
+        padding: 1.25rem;
+    }
+
+    .featureIcon {
+        font-size: 1.5rem;
+    }
+
+    .featureTitle {
+        font-size: 0.9rem;
+    }
+
+    .featureDesc {
+        font-size: 0.8rem;
+    }
+
+    .cta {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    .ctaTitle {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+        .featureGrid {
+            grid-template-columns: 1fr;
+        }
     }
 
     .blogGrid {
@@ -337,8 +404,10 @@
     }
 
     .ctaBtn {
-        padding: 0.7rem 2rem;
-        font-size: 0.8rem;
-        min-height: 42px;
+        padding: 0.8rem 2rem;
+        font-size: 0.85rem;
+        min-height: 44px;
+        width: 100%;
+        max-width: 300px;
     }
 }

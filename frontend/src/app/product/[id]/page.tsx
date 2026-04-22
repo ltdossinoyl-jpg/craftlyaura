@@ -313,8 +313,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     <div className={styles.leftColumn}>
                         <div className={styles.imageGallery}>
                             <img
-                                src={mainImage}
-                                alt={product.title}
+                                src={mainImage || '/placeholder.png'}
+                                alt={product.title || 'Product Image'}
                                 className={styles.mainImage}
                                 onClick={() => setIsLightboxOpen(true)}
                                 style={{ cursor: 'zoom-in' }}
@@ -340,8 +340,13 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     {/* Right Scrolling Column */}
                     <div className={`${styles.rightColumn} fade-in delay-1`}>
                         <div className={styles.breadcrumbs}>
-                            <Link href="/">Home</Link> <span className={styles.divider}>/</span>
-                            <Link href={`/category/${product.category.toLowerCase()}`}>{product.category}</Link>
+                            <Link href="/">Home</Link>
+                            {product.category && (
+                                <>
+                                    <span className={styles.divider}>/</span>
+                                    <Link href={`/category/${product.category.toLowerCase()}`}>{product.category}</Link>
+                                </>
+                            )}
                         </div>
 
                         <h1 className={styles.title}>{product.title}</h1>
@@ -352,7 +357,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                 {hasDifferentPrices && !currentVariation?.price && (
                                     <span className={styles.priceFrom}>From </span>
                                 )}
-                                <span className={styles.price}>${currentPrice.toFixed(2)}</span>
+                                <span className={styles.price}>${Number(currentPrice || 0).toFixed(2)}</span>
                             </div>
                         )}
 

@@ -37,11 +37,7 @@ export default function CustomizationPage() {
                             <h3 className={styles.featureTitle}>Handle Styles</h3>
                             <p className={styles.featureDesc}>Simple Cross, Flat Cross, Lever — or discuss a custom design with our team.</p>
                         </div>
-                        <div className={styles.featureCard}>
-                            <span className={styles.featureIcon}>🚿</span>
-                            <h3 className={styles.featureTitle}>Showerheads</h3>
-                            <p className={styles.featureDesc}>Rose, Square, or Round — available in custom diameters from 6" to 14".</p>
-                        </div>
+
                     </div>
                 </div>
 
@@ -71,9 +67,7 @@ export default function CustomizationPage() {
                     <p className={styles.sectionText}>
                         • Extended shower arm lengths for high ceilings or rain-style installations
                     </p>
-                    <p className={styles.sectionText}>
-                        • Oversized showerheads (10"–14" diameter) for luxury spa bathrooms
-                    </p>
+
                     <p className={styles.sectionText}>
                         • Custom sink dimensions to fit exact countertop cutouts
                     </p>

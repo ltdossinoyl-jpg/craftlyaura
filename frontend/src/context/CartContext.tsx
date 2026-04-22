@@ -1,104 +1,110 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect } from 'react';
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 import { Product } from '@/types';
 
 interface CartItem extends Product {
     quantity: number;
 }
 
-interface CartContextType {
+interface CartStoreType {
     items: CartItem[];
+    isCartPopupOpen: boolean;
+    isCheckoutDrawerOpen: boolean;
+    lastAddedItem: Product | null;
+    cartTotal: number;
+
     addItem: (product: Product) => void;
     removeItem: (id: string) => void;
     updateQuantity: (id: string, newQuantity: number) => void;
-    cartTotal: number;
-    isCartPopupOpen: boolean;
-    lastAddedItem: Product | null;
     closeCartPopup: () => void;
-    isCheckoutDrawerOpen: boolean;
     openCheckoutDrawer: () => void;
     closeCheckoutDrawer: () => void;
 }
 
-const CartContext = createContext<CartContextType | undefined>(undefined);
+const getCartItemId = (product: Product) => product.cartItemId || product.id;
 
-export function CartProvider({ children }: { children: React.ReactNode }) {
-    const [items, setItems] = useState<CartItem[]>([]);
-    const [isMounted, setIsMounted] = useState(false);
-    const [isCartPopupOpen, setIsCartPopupOpen] = useState(false);
-    const [isCheckoutDrawerOpen, setIsCheckoutDrawerOpen] = useState(false);
-    const [lastAddedItem, setLastAddedItem] = useState<Product | null>(null);
+export const useCartStore = create<CartStoreType>()(
+    persist(
+        (set, get) => ({
+            items: [],
+            isCartPopupOpen: false,
+            isCheckoutDrawerOpen: false,
+            lastAddedItem: null,
 
-    useEffect(() => {
-        setIsMounted(true);
-        const savedCart = localStorage.getItem('atlas_cart');
-        if (savedCart) {
-            try { setItems(JSON.parse(savedCart)); } catch (e) { }
+            get cartTotal() {
+                return get().items.reduce((total, item) => total + item.price * item.quantity, 0);
+            },
+
+            addItem: (product: Product) => {
+                const cId = getCartItemId(product);
+                set((state) => {
+                    const existing = state.items.find((item) => (item.cartItemId || item.id) === cId);
+                    if (existing) {
+                        return {
+                            items: state.items.map((item) =>
+                                (item.cartItemId || item.id) === cId
+                                    ? { ...item, quantity: item.quantity + 1 }
+                                    : item
+                            ),
+                            lastAddedItem: product,
+                            isCartPopupOpen: true,
+                        };
+                    }
+                    return {
+                        items: [...state.items, { ...product, quantity: 1, cartItemId: cId }],
+                        lastAddedItem: product,
+                        isCartPopupOpen: true,
+                    };
+                });
+            },
+
+            removeItem: (id: string) => {
+                set((state) => ({
+                    items: state.items.filter((item) => (item.cartItemId || item.id) !== id),
+                }));
+            },
+
+            updateQuantity: (id: string, newQuantity: number) => {
+                if (newQuantity < 1) return;
+                set((state) => ({
+                    items: state.items.map((item) =>
+                        (item.cartItemId || item.id) === id ? { ...item, quantity: newQuantity } : item
+                    ),
+                }));
+            },
+
+            closeCartPopup: () => set({ isCartPopupOpen: false }),
+            openCheckoutDrawer: () => set({ isCheckoutDrawerOpen: true }),
+            closeCheckoutDrawer: () => set({ isCheckoutDrawerOpen: false }),
+        }),
+        {
+            name: 'atlas_cart_zustand', // Storage name
         }
-    }, []);
+    )
+);
 
-    useEffect(() => {
-        if (isMounted) {
-            localStorage.setItem('atlas_cart', JSON.stringify(items));
-        }
-    }, [items, isMounted]);
-
-    const getCartItemId = (product: Product) => product.cartItemId || product.id;
-
-    const addItem = (product: Product) => {
-        const cId = getCartItemId(product);
-        setItems((current) => {
-            const existing = current.find(item => (item.cartItemId || item.id) === cId);
-            if (existing) {
-                return current.map(item =>
-                    (item.cartItemId || item.id) === cId ? { ...item, quantity: item.quantity + 1 } : item
-                );
-            }
-            return [...current, { ...product, quantity: 1, cartItemId: cId }];
-        });
-        setLastAddedItem(product);
-        setIsCartPopupOpen(true);
-    };
-
-    const closeCartPopup = () => setIsCartPopupOpen(false);
-    const openCheckoutDrawer = () => setIsCheckoutDrawerOpen(true);
-    const closeCheckoutDrawer = () => setIsCheckoutDrawerOpen(false);
-
-    const removeItem = (id: string) => {
-        setItems((current) => current.filter(item => (item.cartItemId || item.id) !== id));
-    };
-
-    const updateQuantity = (id: string, newQuantity: number) => {
-        if (newQuantity < 1) return;
-        setItems((current) =>
-            current.map(item => (item.cartItemId || item.id) === id ? { ...item, quantity: newQuantity } : item)
-        );
-    };
-
-    const cartTotal = items.reduce((total, item) => total + item.price * item.quantity, 0);
-
-    return (
-        <CartContext.Provider value={{
-            items,
-            addItem,
-            removeItem,
-            updateQuantity,
-            cartTotal,
-            isCartPopupOpen,
-            lastAddedItem,
-            closeCartPopup,
-            isCheckoutDrawerOpen,
-            openCheckoutDrawer,
-            closeCheckoutDrawer
-        }}>
-            {children}
-        </CartContext.Provider>
-    );
-}
-
+// Keep the old API signature identical so all other files keep working!
 export const useCart = () => {
-    const context = useContext(CartContext);
-    if (context === undefined) throw new Error('useCart must be used within CartProvider');
-    return context;
+    // We bind it inside a hook wrapper so we can still mock the context signature.
+    const store = useCartStore();
+    return {
+        items: store.items,
+        addItem: store.addItem,
+        removeItem: store.removeItem,
+        updateQuantity: store.updateQuantity,
+        cartTotal: store.items.reduce((total, item) => total + item.price * item.quantity, 0), // Calculate dynamically to bypass getter limitations
+        isCartPopupOpen: store.isCartPopupOpen,
+        lastAddedItem: store.lastAddedItem,
+        closeCartPopup: store.closeCartPopup,
+        isCheckoutDrawerOpen: store.isCheckoutDrawerOpen,
+        openCheckoutDrawer: store.openCheckoutDrawer,
+        closeCheckoutDrawer: store.closeCheckoutDrawer,
+    };
 };
+
+// Dummy provider so `layout.tsx` doesn't break
+export function CartProvider({ children }: { children: React.ReactNode }) {
+    return <>{children}</>;
+}
