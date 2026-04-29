@@ -290,8 +290,11 @@ export default function AdvancedAdminDashboard() {
                     </div>
                 </div>
                 <div className={styles.headerActions}>
+                    <Link href="/admin" className={styles.btnSecondary} style={{ border: 'none', background: 'transparent' }}>
+                        📊 Dashboard
+                    </Link>
                     <Link href="/" className={styles.btnSecondary} style={{ border: 'none', background: 'transparent' }}>
-                        View Live Site
+                        👁️ View Live Store
                     </Link>
                     <button className={styles.btnSecondary} onClick={() => setShowBulk(true)}>
                         📦 Bulk Import
