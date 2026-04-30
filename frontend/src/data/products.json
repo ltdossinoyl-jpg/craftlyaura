@@ -953,17 +953,16 @@
     "price": 69,
     "category": "Crossbody Bag - Women's",
     "slug": "alexandra-plum-royale-leather-barrel-bag",
-    "image": "/images/uploads/alexandra-plum-royale-leather-barrel-bag-main.jpg",
+    "image": "/images/uploads/1777570469242-alexandra-plum-royale-leather-barrel-bag-main.jpg",
     "images": [
-      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-main.jpg",
-      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-product-14220094789822772-453.jpg",
-      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-product-14220094789822772-456.jpg"
+      "/images/uploads/1777570469242-alexandra-plum-royale-leather-barrel-bag-main.jpg",
+      "/images/uploads/1777570469242-alexandra-plum-royale-leather-barrel-bag-product-14220564401456356-508.jpg"
     ],
     "variationTypes": {
       "Size": [
         "M",
         "L",
-        "S"
+        "Small"
       ]
     },
     "variations": [
@@ -976,7 +975,7 @@
         "price": 69
       },
       {
-        "Size": "S",
+        "Size": "Small",
         "price": 69
       }
     ]
