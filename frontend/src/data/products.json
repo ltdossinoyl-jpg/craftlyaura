@@ -1,502 +1,38 @@
 [
   {
-    "id": "1",
-    "title": "Authentic Moroccan Leather Barrel Bag - Ocean Breeze",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This ocean breeze patterned barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "ocean-breeze-patterned-barrel-bag",
-    "image": "/images/uploads/1776555116123_WhatsAppImage2026-04-18at4.09.03PM.jpeg",
-    "images": [
-      "/images/uploads/1776555116123_WhatsAppImage2026-04-18at4.09.03PM.jpeg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-main.jpg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-alt-1.jpg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-alt-2.jpg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-alt-3.jpg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-alt-4.jpg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-alt-5.jpg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-alt-6.jpg",
-      "/images/1/ocean-breeze-patterned-barrel-bag-alt-7.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "title": "Authentic Moroccan Leather Barrel Bag - Crimson Sunset",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This crimson sunset patterned barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "crimson-sunset-patterned-barrel-bag",
-    "image": "/images/uploads/1776555150633_WhatsAppImage2026-04-18at4.08.00PM1.jpeg",
-    "images": [
-      "/images/uploads/1776555150633_WhatsAppImage2026-04-18at4.08.00PM1.jpeg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-main.jpg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-2.jpg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-3.jpg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-4.jpg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-5.jpg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-6.jpg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-7.jpg",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-8.png",
-      "/images/2/crimson-sunset-patterned-barrel-bag-alt-9.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
+    "_id": "69e589554a61b50bfdfc5372",
     "id": "3",
-    "title": "Authentic Moroccan Leather Barrel Bag - Olive Grove",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This olive grove patterned barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "title": "Olive Grove Patterned Barrel Bag",
+    "description": "Discover the Olive Grove Patterned Barrel Bag. Featuring earthy olive green woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "olive-grove-patterned-barrel-bag",
-    "image": "/images/uploads/1776555181169_WhatsAppImage2026-04-18at4.09.03PM.jpeg",
+    "image": "/images/uploads/1776555220360_WhatsAppImage2026-04-18at3.48.42PM4.jpeg",
     "images": [
-      "/images/uploads/1776555181169_WhatsAppImage2026-04-18at4.09.03PM.jpeg",
       "/images/3/olive-grove-patterned-barrel-bag-alt-1.jpg",
       "/images/3/olive-grove-patterned-barrel-bag-alt-2.jpg",
       "/images/3/olive-grove-patterned-barrel-bag-alt-3.jpg",
       "/images/3/olive-grove-patterned-barrel-bag-alt-4.jpg",
       "/images/3/olive-grove-patterned-barrel-bag-alt-5.png",
-      "/images/3/olive-grove-patterned-barrel-bag-alt-6.jpg"
+      "/images/3/olive-grove-patterned-barrel-bag-alt-6.jpg",
+      "/images/uploads/1776555220360_WhatsAppImage2026-04-18at3.48.42PM4.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
   },
   {
-    "id": "4",
-    "title": "Authentic Moroccan Leather Barrel Bag - Desert Nomad Duffel Barrel Set",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This desert nomad duffel barrel set is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian travel bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "desert-nomad-duffel-barrel-set",
-    "image": "/images/uploads/1776555202069_WhatsAppImage2026-04-18at4.08.00PM1.jpeg",
-    "images": [
-      "/images/uploads/1776555202069_WhatsAppImage2026-04-18at4.08.00PM1.jpeg",
-      "/images/4/desert-nomad-duffel-barrel-set-main.jpg",
-      "/images/4/desert-nomad-duffel-barrel-set-alt-1.jpg",
-      "/images/4/desert-nomad-duffel-barrel-set-alt-2.jpg",
-      "/images/4/desert-nomad-duffel-barrel-set-alt-3.jpg",
-      "/images/4/desert-nomad-duffel-barrel-set-alt-4.jpg",
-      "/images/4/desert-nomad-duffel-barrel-set-alt-5.png",
-      "/images/4/desert-nomad-duffel-barrel-set-alt-6.jpg",
-      "/images/4/desert-nomad-duffel-barrel-set-alt-7.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "5",
-    "title": "Authentic Moroccan Leather Barrel Bag - Mosaic Dream Multi Color",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This mosaic dream multi color barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "mosaic-dream-multi-color-barrel-bag",
-    "image": "/images/uploads/1776555220360_WhatsAppImage2026-04-18at3.48.42PM4.jpeg",
-    "images": [
-      "/images/uploads/1776555220360_WhatsAppImage2026-04-18at3.48.42PM4.jpeg",
-      "/images/5/mosaic-dream-multi-color-barrel-bag-main.jpg",
-      "/images/5/mosaic-dream-multi-color-barrel-bag-alt-1.jpg",
-      "/images/5/mosaic-dream-multi-color-barrel-bag-alt-2.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "6",
-    "title": "Authentic Moroccan Leather Barrel Bag - Sandstone Light",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This sandstone light patterned barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "sandstone-light-patterned-barrel-bag",
-    "image": "/images/uploads/1776555259385_WhatsAppImage2026-04-18at4.04.52PM.jpeg",
-    "images": [
-      "/images/uploads/1776555259385_WhatsAppImage2026-04-18at4.04.52PM.jpeg",
-      "/images/6/sandstone-light-patterned-barrel-bag-main.jpg",
-      "/images/6/sandstone-light-patterned-barrel-bag-alt-1.jpg",
-      "/images/6/sandstone-light-patterned-barrel-bag-alt-2.jpg",
-      "/images/6/sandstone-light-patterned-barrel-bag-alt-3.jpg",
-      "/images/6/sandstone-light-patterned-barrel-bag-alt-4.jpg",
-      "/images/6/sandstone-light-patterned-barrel-bag-alt-5.jpg",
-      "/images/6/sandstone-light-patterned-barrel-bag-alt-6.jpg",
-      "/images/6/sandstone-light-patterned-barrel-bag-alt-7.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "7",
-    "title": "Authentic Moroccan Leather Barrel Bag - Sapphire Elegance Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This sapphire elegance leather barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "sapphire-elegance-leather-barrel-bag",
-    "image": "/images/uploads/1776555275484_WhatsAppImage2026-04-18at4.08.00PM.jpeg",
-    "images": [
-      "/images/uploads/1776555275484_WhatsAppImage2026-04-18at4.08.00PM.jpeg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-main.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-1.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-2.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-3.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-4.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-5.png",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-6.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-7.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-8.jpg",
-      "/images/7/sapphire-elegance-leather-barrel-bag-alt-9.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "8",
-    "title": "Authentic Moroccan Leather Barrel Bag - Rose Petal Pink Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This rose petal pink leather barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "rose-petal-pink-leather-barrel-bag",
-    "image": "/images/uploads/1776555288314_WhatsAppImage2026-04-18at3.48.41PM1.jpeg",
-    "images": [
-      "/images/uploads/1776555288314_WhatsAppImage2026-04-18at3.48.41PM1.jpeg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-main.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-1.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-2.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-3.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-4.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-5.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-9.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-10.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-11.jpg",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-12.png",
-      "/images/8/rose-petal-pink-leather-barrel-bag-alt-14.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "9",
-    "title": "Authentic Moroccan Leather Barrel Bag - Ruby Red Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This ruby red leather barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "ruby-red-leather-barrel-bag",
-    "image": "/images/uploads/1776555307335_WhatsAppImage2026-04-18at4.04.52PM.jpeg",
-    "images": [
-      "/images/uploads/1776555307335_WhatsAppImage2026-04-18at4.04.52PM.jpeg",
-      "/images/9/ruby-red-leather-barrel-bag-main.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-1.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-2.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-3.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-4.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-5.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-6.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-7.jpg",
-      "/images/9/ruby-red-leather-barrel-bag-alt-8.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "10",
-    "title": "Authentic Moroccan Leather Barrel Bag - Plum Royale Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This plum royale leather barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "plum-royale-leather-barrel-bag",
-    "image": "/images/uploads/1776555357418_WhatsAppImage2026-04-18at3.48.41PM4.jpeg",
-    "images": [
-      "/images/uploads/1776555357418_WhatsAppImage2026-04-18at3.48.41PM4.jpeg",
-      "/images/10/plum-royale-leather-barrel-bag-main.jpg",
-      "/images/10/plum-royale-leather-barrel-bag-alt-1.jpg",
-      "/images/10/plum-royale-leather-barrel-bag-alt-2.jpg",
-      "/images/10/plum-royale-leather-barrel-bag-alt-3.jpg",
-      "/images/10/plum-royale-leather-barrel-bag-alt-4.jpg",
-      "/images/10/plum-royale-leather-barrel-bag-alt-5.jpg",
-      "/images/10/plum-royale-leather-barrel-bag-alt-6.jpg",
-      "/images/10/plum-royale-leather-barrel-bag-alt-7.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "11",
-    "title": "Authentic Moroccan Leather Barrel Bag - Forest Green Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This forest green leather barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "forest-green-leather-barrel-bag",
-    "image": "/images/uploads/1776555368823_WhatsAppImage2026-04-18at3.48.42PM2.jpeg",
-    "images": [
-      "/images/uploads/1776555368823_WhatsAppImage2026-04-18at3.48.42PM2.jpeg",
-      "/images/11/forest-green-leather-barrel-bag-main.jpg",
-      "/images/11/forest-green-leather-barrel-bag-alt-1.jpg",
-      "/images/11/forest-green-leather-barrel-bag-alt-2.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "12",
-    "title": "Authentic Moroccan Leather Barrel Bag - Rustic Charm Cowhide",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This rustic charm cowhide barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "rustic-charm-cowhide-barrel-bag",
-    "image": "/images/uploads/1776555429467_WhatsAppImage2026-04-18at4.02.20PM1.jpeg",
-    "images": [
-      "/images/uploads/1776555429467_WhatsAppImage2026-04-18at4.02.20PM1.jpeg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-main.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-1.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-2.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-3.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-4.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-5.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-6.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-7.jpg",
-      "/images/12/rustic-charm-cowhide-barrel-bag-alt-8.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
+    "_id": "69e589554a61b50bfdfc537c",
     "id": "13",
-    "title": "Authentic Moroccan Leather Barrel Bag - Tribal Fire Multi Color",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This tribal fire multi color barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "title": "Tribal Fire Multi-Color Barrel Bag",
+    "description": "Discover the Tribal Fire Multi-Color Barrel Bag. Featuring bold red, grey, and yellow tribal patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "tribal-fire-multi-color-barrel-bag",
-    "image": "/images/uploads/1776555454676_WhatsAppImage2026-04-18at3.48.42PM1.jpeg",
+    "image": "/images/uploads/1776555517802_WhatsAppImage2026-04-18at3.48.41PM5.jpeg",
     "images": [
-      "/images/uploads/1776555454676_WhatsAppImage2026-04-18at3.48.42PM1.jpeg",
       "/images/13/tribal-fire-multi-color-barrel-bag-main.jpg",
       "/images/13/tribal-fire-multi-color-barrel-bag-alt-1.jpg",
       "/images/13/tribal-fire-multi-color-barrel-bag-alt-2.jpg",
@@ -506,301 +42,517 @@
       "/images/13/tribal-fire-multi-color-barrel-bag-alt-6.jpg",
       "/images/13/tribal-fire-multi-color-barrel-bag-alt-8.jpg",
       "/images/13/tribal-fire-multi-color-barrel-bag-alt-9.jpg",
-      "/images/13/tribal-fire-multi-color-barrel-bag-alt-10.jpg"
+      "/images/13/tribal-fire-multi-color-barrel-bag-alt-10.jpg",
+      "/images/uploads/1776555517802_WhatsAppImage2026-04-18at3.48.41PM5.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
   },
   {
-    "id": "14",
-    "title": "Authentic Moroccan Leather Barrel Bag - Golden Radiance",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This golden radiance patterned barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "_id": "69e589554a61b50bfdfc537e",
+    "id": "15",
+    "title": "Classic Tan Leather Barrel Bag",
+    "description": "Discover the Classic Tan Leather Barrel Bag. Featuring timeless tan brown genuine leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "golden-radiance-patterned-barrel-bag",
-    "image": "/images/uploads/1776555466024_WhatsAppImage2026-04-18at3.48.40PM1.jpeg",
+    "image": "/images/uploads/1776555580669_WhatsAppImage2026-04-18at4.12.28PM.jpeg",
     "images": [
-      "/images/uploads/1776555466024_WhatsAppImage2026-04-18at3.48.40PM1.jpeg",
+      "/images/15/classic-tan-leather-barrel-bag-main.jpg",
+      "/images/15/classic-tan-leather-barrel-bag-alt-1.jpg",
+      "/images/15/classic-tan-leather-barrel-bag-alt-2.jpg",
+      "/images/uploads/1776555580669_WhatsAppImage2026-04-18at4.12.28PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5379",
+    "id": "10",
+    "title": "Plum Royale Leather Barrel Bag",
+    "description": "Discover the Plum Royale Leather Barrel Bag. Featuring deep plum purple genuine leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555454676_WhatsAppImage2026-04-18at3.48.42PM1.jpeg",
+    "images": [
+      "/images/10/plum-royale-leather-barrel-bag-main.jpg",
+      "/images/10/plum-royale-leather-barrel-bag-alt-1.jpg",
+      "/images/10/plum-royale-leather-barrel-bag-alt-2.jpg",
+      "/images/10/plum-royale-leather-barrel-bag-alt-3.jpg",
+      "/images/10/plum-royale-leather-barrel-bag-alt-4.jpg",
+      "/images/10/plum-royale-leather-barrel-bag-alt-5.jpg",
+      "/images/10/plum-royale-leather-barrel-bag-alt-6.jpg",
+      "/images/10/plum-royale-leather-barrel-bag-alt-7.jpg",
+      "/images/uploads/1776555454676_WhatsAppImage2026-04-18at3.48.42PM1.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc537b",
+    "id": "12",
+    "title": "Rustic Charm Cowhide Barrel Bag",
+    "description": "Discover the Rustic Charm Cowhide Barrel Bag. Featuring unique natural black and white cowhide, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555503027_WhatsAppImage2026-04-18at3.48.42PM.jpeg",
+    "images": [
+      "/images/12/rustic-charm-cowhide-barrel-bag-main.jpg",
+      "/images/12/rustic-charm-cowhide-barrel-bag-alt-1.jpg",
+      "/images/12/rustic-charm-cowhide-barrel-bag-alt-2.jpg",
+      "/images/12/rustic-charm-cowhide-barrel-bag-alt-5.jpg",
+      "/images/12/rustic-charm-cowhide-barrel-bag-alt-6.jpg",
+      "/images/12/rustic-charm-cowhide-barrel-bag-alt-7.jpg",
+      "/images/12/rustic-charm-cowhide-barrel-bag-alt-8.jpg",
+      "/images/uploads/1776555503027_WhatsAppImage2026-04-18at3.48.42PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5371",
+    "id": "2",
+    "title": "Crimson Sunset Patterned Barrel Bag",
+    "description": "Discover the Crimson Sunset Patterned Barrel Bag. Featuring rich red and warm woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555202069_WhatsAppImage2026-04-18at4.08.00PM1.jpeg",
+    "images": [
+      "/images/2/crimson-sunset-patterned-barrel-bag-main.jpg",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-2.jpg",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-3.jpg",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-4.jpg",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-5.jpg",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-6.jpg",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-7.jpg",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-8.png",
+      "/images/2/crimson-sunset-patterned-barrel-bag-alt-9.jpg",
+      "/images/uploads/1776555202069_WhatsAppImage2026-04-18at4.08.00PM1.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.113Z",
+    "updatedAt": "2026-04-20T02:03:01.113Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5378",
+    "id": "9",
+    "title": "Ruby Red Leather Barrel Bag",
+    "description": "Discover the Ruby Red Leather Barrel Bag. Featuring striking ruby red genuine leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555429467_WhatsAppImage2026-04-18at4.02.20PM1.jpeg",
+    "images": [
+      "/images/9/ruby-red-leather-barrel-bag-main.jpg",
+      "/images/9/ruby-red-leather-barrel-bag-alt-1.jpg",
+      "/images/9/ruby-red-leather-barrel-bag-alt-2.jpg",
+      "/images/9/ruby-red-leather-barrel-bag-alt-3.jpg",
+      "/images/9/ruby-red-leather-barrel-bag-alt-4.jpg",
+      "/images/9/ruby-red-leather-barrel-bag-alt-5.jpg",
+      "/images/uploads/1776555429467_WhatsAppImage2026-04-18at4.02.20PM1.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5373",
+    "id": "4",
+    "title": "Desert Nomad Duffel & Barrel Set",
+    "description": "Discover the Desert Nomad Duffel & Barrel Set. Featuring a stunning matching set with intricate earthy patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555259385_WhatsAppImage2026-04-18at4.04.52PM.jpeg",
+    "images": [
+      "/images/4/desert-nomad-duffel-barrel-set-main.jpg",
+      "/images/4/desert-nomad-duffel-barrel-set-alt-1.jpg",
+      "/images/4/desert-nomad-duffel-barrel-set-alt-2.jpg",
+      "/images/4/desert-nomad-duffel-barrel-set-alt-3.jpg",
+      "/images/4/desert-nomad-duffel-barrel-set-alt-4.jpg",
+      "/images/4/desert-nomad-duffel-barrel-set-alt-5.png",
+      "/images/4/desert-nomad-duffel-barrel-set-alt-6.jpg",
+      "/images/4/desert-nomad-duffel-barrel-set-alt-7.jpg",
+      "/images/uploads/1776555259385_WhatsAppImage2026-04-18at4.04.52PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5370",
+    "id": "1",
+    "title": "Ocean Breeze Patterned Barrel Bag",
+    "description": "Discover the Ocean Breeze Patterned Barrel Bag. Featuring vibrant blue woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555181169_WhatsAppImage2026-04-18at4.09.03PM.jpeg",
+    "images": [
+      "/images/1/ocean-breeze-patterned-barrel-bag-main.jpg",
+      "/images/1/ocean-breeze-patterned-barrel-bag-alt-1.jpg",
+      "/images/1/ocean-breeze-patterned-barrel-bag-alt-2.jpg",
+      "/images/1/ocean-breeze-patterned-barrel-bag-alt-3.jpg",
+      "/images/1/ocean-breeze-patterned-barrel-bag-alt-4.jpg",
+      "/images/1/ocean-breeze-patterned-barrel-bag-alt-5.jpg",
+      "/images/1/ocean-breeze-patterned-barrel-bag-alt-6.jpg",
+      "/images/1/ocean-breeze-patterned-barrel-bag-alt-7.jpg",
+      "/images/uploads/1776555181169_WhatsAppImage2026-04-18at4.09.03PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.111Z",
+    "updatedAt": "2026-04-20T02:03:01.111Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5386",
+    "id": "23",
+    "title": "Maroon Classic Leather Briefcase",
+    "description": "Discover the Maroon Classic Leather Briefcase. Featuring elegant maroon leather with refined details, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555842555_WhatsAppImage2026-04-18at4.18.10PM.jpeg",
+    "images": [
+      "/images/23/maroon-classic-leather-briefcase-main.jpg",
+      "/images/23/maroon-classic-leather-briefcase-alt-1.jpg",
+      "/images/23/maroon-classic-leather-briefcase-alt-2.jpg",
+      "/images/23/maroon-classic-leather-briefcase-alt-3.jpg",
+      "/images/uploads/1776555842555_WhatsAppImage2026-04-18at4.18.10PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.115Z",
+    "updatedAt": "2026-04-20T02:03:01.115Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5376",
+    "id": "7",
+    "title": "Sapphire Elegance Leather Barrel Bag",
+    "description": "Discover the Sapphire Elegance Leather Barrel Bag. Featuring smooth sapphire blue leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555307335_WhatsAppImage2026-04-18at4.04.52PM.jpeg",
+    "images": [
+      "/images/7/sapphire-elegance-leather-barrel-bag-main.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-1.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-2.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-3.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-4.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-5.png",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-6.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-7.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-8.jpg",
+      "/images/7/sapphire-elegance-leather-barrel-bag-alt-9.jpg",
+      "/images/uploads/1776555307335_WhatsAppImage2026-04-18at4.04.52PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5377",
+    "id": "8",
+    "title": "Rose Petal Pink Leather Barrel Bag",
+    "description": "Discover the Rose Petal Pink Leather Barrel Bag. Featuring soft pink genuine leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555368823_WhatsAppImage2026-04-18at3.48.42PM2.jpeg",
+    "images": [
+      "/images/8/rose-petal-pink-leather-barrel-bag-main.jpg",
+      "/images/8/rose-petal-pink-leather-barrel-bag-alt-1.jpg",
+      "/images/8/rose-petal-pink-leather-barrel-bag-alt-2.jpg",
+      "/images/8/rose-petal-pink-leather-barrel-bag-alt-3.jpg",
+      "/images/8/rose-petal-pink-leather-barrel-bag-alt-5.jpg",
+      "/images/8/rose-petal-pink-leather-barrel-bag-alt-11.jpg",
+      "/images/8/rose-petal-pink-leather-barrel-bag-alt-12.png",
+      "/images/uploads/1776555368823_WhatsAppImage2026-04-18at3.48.42PM2.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5375",
+    "id": "6",
+    "title": "Sandstone Light Patterned Barrel Bag",
+    "description": "Discover the Sandstone Light Patterned Barrel Bag. Featuring subtle light beige woven designs, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555288314_WhatsAppImage2026-04-18at3.48.41PM1.jpeg",
+    "images": [
+      "/images/6/sandstone-light-patterned-barrel-bag-main.jpg",
+      "/images/6/sandstone-light-patterned-barrel-bag-alt-1.jpg",
+      "/images/6/sandstone-light-patterned-barrel-bag-alt-2.jpg",
+      "/images/6/sandstone-light-patterned-barrel-bag-alt-3.jpg",
+      "/images/6/sandstone-light-patterned-barrel-bag-alt-4.jpg",
+      "/images/6/sandstone-light-patterned-barrel-bag-alt-5.jpg",
+      "/images/6/sandstone-light-patterned-barrel-bag-alt-6.jpg",
+      "/images/6/sandstone-light-patterned-barrel-bag-alt-7.jpg",
+      "/images/uploads/1776555288314_WhatsAppImage2026-04-18at3.48.41PM1.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc537f",
+    "id": "16",
+    "title": "Emerald Envy Leather Barrel Bag",
+    "description": "Discover the Emerald Envy Leather Barrel Bag. Featuring vibrant emerald green genuine leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555602876_WhatsAppImage2026-04-18at4.12.29PM.jpeg",
+    "images": [
+      "/images/16/emerald-envy-leather-barrel-bag-main.jpg",
+      "/images/16/emerald-envy-leather-barrel-bag-alt-1.jpg",
+      "/images/16/emerald-envy-leather-barrel-bag-alt-2.jpg",
+      "/images/uploads/1776555602876_WhatsAppImage2026-04-18at4.12.29PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc537d",
+    "id": "14",
+    "title": "Golden Radiance Patterned Barrel Bag",
+    "description": "Discover the Golden Radiance Patterned Barrel Bag. Featuring bright yellow leather accents with elegant woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555551521_WhatsAppImage2026-04-18at4.12.28PM1.jpeg",
+    "images": [
       "/images/14/golden-radiance-patterned-barrel-bag-main.jpg",
       "/images/14/golden-radiance-patterned-barrel-bag-alt-1.jpg",
       "/images/14/golden-radiance-patterned-barrel-bag-alt-2.jpg",
-      "/images/14/golden-radiance-patterned-barrel-bag-alt-3.jpg"
+      "/images/14/golden-radiance-patterned-barrel-bag-alt-3.jpg",
+      "/images/uploads/1776555551521_WhatsAppImage2026-04-18at4.12.28PM1.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
   },
   {
-    "id": "15",
-    "title": "Authentic Moroccan Leather Barrel Bag - Classic Tan Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This classic tan leather barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "_id": "69e589554a61b50bfdfc5385",
+    "id": "22",
+    "title": "Onyx Black Duffel & Barrel Set",
+    "description": "Discover the Onyx Black Duffel & Barrel Set. Featuring sleek all-black premium leather perfect for travel, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "classic-tan-leather-barrel-bag",
-    "image": "/images/uploads/1776555503027_WhatsAppImage2026-04-18at3.48.42PM.jpeg",
+    "image": "/images/uploads/1776555823716_WhatsAppImage2026-04-18at4.02.20PM1.jpeg",
     "images": [
-      "/images/uploads/1776555503027_WhatsAppImage2026-04-18at3.48.42PM.jpeg",
-      "/images/15/classic-tan-leather-barrel-bag-main.jpg",
-      "/images/15/classic-tan-leather-barrel-bag-alt-1.jpg",
-      "/images/15/classic-tan-leather-barrel-bag-alt-2.jpg"
+      "/images/22/onyx-black-duffel-barrel-set-main.jpg",
+      "/images/22/onyx-black-duffel-barrel-set-alt-1.jpg",
+      "/images/22/onyx-black-duffel-barrel-set-alt-2.jpg",
+      "/images/uploads/1776555823716_WhatsAppImage2026-04-18at4.02.20PM1.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.115Z",
+    "updatedAt": "2026-04-20T02:03:01.115Z",
+    "__v": 0
   },
   {
-    "id": "16",
-    "title": "Authentic Moroccan Leather Barrel Bag - Emerald Envy Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This emerald envy leather barrel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "_id": "69e589554a61b50bfdfc5374",
+    "id": "5",
+    "title": "Mosaic Dream Multi-Color Barrel Bag",
+    "description": "Discover the Mosaic Dream Multi-Color Barrel Bag. Featuring a beautiful mosaic of multi-colored woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "emerald-envy-leather-barrel-bag",
-    "image": "/images/uploads/1776555517802_WhatsAppImage2026-04-18at3.48.41PM5.jpeg",
+    "image": "/images/uploads/1776555275484_WhatsAppImage2026-04-18at4.08.00PM.jpeg",
     "images": [
-      "/images/uploads/1776555517802_WhatsAppImage2026-04-18at3.48.41PM5.jpeg",
-      "/images/16/emerald-envy-leather-barrel-bag-main.jpg",
-      "/images/16/emerald-envy-leather-barrel-bag-alt-1.jpg",
-      "/images/16/emerald-envy-leather-barrel-bag-alt-2.jpg"
+      "/images/5/mosaic-dream-multi-color-barrel-bag-main.jpg",
+      "/images/5/mosaic-dream-multi-color-barrel-bag-alt-1.jpg",
+      "/images/5/mosaic-dream-multi-color-barrel-bag-alt-2.jpg",
+      "/images/uploads/1776555275484_WhatsAppImage2026-04-18at4.08.00PM.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
   },
   {
-    "id": "17",
-    "title": "Handcrafted Bohemian Leather Tote - Azure Blue Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This azure blue leather tote is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian tote bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "azure-blue-leather-tote",
-    "image": "/images/uploads/1776555551521_WhatsAppImage2026-04-18at4.12.28PM1.jpeg",
-    "images": [
-      "/images/uploads/1776555551521_WhatsAppImage2026-04-18at4.12.28PM1.jpeg",
-      "/images/17/azure-blue-leather-tote-main.jpg",
-      "/images/17/azure-blue-leather-tote-alt-1.jpg",
-      "/images/17/azure-blue-leather-tote-alt-2.jpg",
-      "/images/17/azure-blue-leather-tote-alt-4.jpg",
-      "/images/17/azure-blue-leather-tote-alt-5.jpg",
-      "/images/17/azure-blue-leather-tote-alt-9.jpg",
-      "/images/17/azure-blue-leather-tote-alt-10.jpg",
-      "/images/17/azure-blue-leather-tote-alt-11.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "18",
-    "title": "Handmade Moroccan Leather Bag - Cognac Dream Leather Shoulder Bag",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This cognac dream leather shoulder bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "cognac-dream-leather-shoulder-bag",
-    "image": "/images/uploads/1776555580669_WhatsAppImage2026-04-18at4.12.28PM.jpeg",
-    "images": [
-      "/images/uploads/1776555580669_WhatsAppImage2026-04-18at4.12.28PM.jpeg",
-      "/images/18/cognac-dream-leather-shoulder-bag-main.jpg",
-      "/images/18/cognac-dream-leather-shoulder-bag-alt-1.jpg",
-      "/images/18/cognac-dream-leather-shoulder-bag-alt-2.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
+    "_id": "69e589554a61b50bfdfc5382",
     "id": "19",
-    "title": "Handmade Moroccan Leather Bag - Midnight Navy Classic Handbag",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This midnight navy classic handbag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "title": "Midnight Navy Classic Handbag",
+    "description": "Discover the Midnight Navy Classic Handbag. Featuring sophisticated midnight navy leather with premium gold-tone hardware, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "midnight-navy-classic-handbag",
-    "image": "/images/uploads/1776555602876_WhatsAppImage2026-04-18at4.12.29PM.jpeg",
+    "image": "/images/uploads/1776555734782_WhatsAppImage2026-04-18at3.48.41PM3.jpeg",
     "images": [
-      "/images/uploads/1776555602876_WhatsAppImage2026-04-18at4.12.29PM.jpeg",
       "/images/19/midnight-navy-classic-handbag-main.jpg",
       "/images/19/midnight-navy-classic-handbag-alt-1.jpg",
       "/images/19/midnight-navy-classic-handbag-alt-2.jpg",
       "/images/19/midnight-navy-classic-handbag-alt-3.jpg",
       "/images/19/midnight-navy-classic-handbag-alt-4.jpg",
-      "/images/19/midnight-navy-classic-handbag-alt-5.jpg"
+      "/images/19/midnight-navy-classic-handbag-alt-5.jpg",
+      "/images/uploads/1776555734782_WhatsAppImage2026-04-18at3.48.41PM3.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.115Z",
+    "updatedAt": "2026-04-20T02:03:01.115Z",
+    "__v": 0
   },
   {
+    "_id": "69e589554a61b50bfdfc5383",
     "id": "20",
-    "title": "Authentic Moroccan Leather Barrel Bag - Sunset Horizon Duffel Barrel Set",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This sunset horizon duffel barrel set is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian travel bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "title": "Sunset Horizon Duffel & Barrel Set",
+    "description": "Discover the Sunset Horizon Duffel & Barrel Set. Featuring a magnificent orange patterned matching bag set, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "sunset-horizon-duffel-barrel-set",
-    "image": "/images/uploads/1776555633654_WhatsAppImage2026-04-18at4.18.09PM.jpeg",
+    "image": "/images/uploads/1776555774481_WhatsAppImage2026-04-18at3.48.41PM5.jpeg",
     "images": [
-      "/images/uploads/1776555633654_WhatsAppImage2026-04-18at4.18.09PM.jpeg",
       "/images/20/sunset-horizon-duffel-barrel-set-main.jpg",
       "/images/20/sunset-horizon-duffel-barrel-set-alt-1.jpg",
-      "/images/20/sunset-horizon-duffel-barrel-set-alt-2.jpg"
+      "/images/20/sunset-horizon-duffel-barrel-set-alt-2.jpg",
+      "/images/uploads/1776555774481_WhatsAppImage2026-04-18at3.48.41PM5.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.115Z",
+    "updatedAt": "2026-04-20T02:03:01.115Z",
+    "__v": 0
   },
   {
-    "id": "21",
-    "title": "Moroccan Artisan Leather Briefcase - Burgundy Executive",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This burgundy executive briefcase is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "_id": "69e589554a61b50bfdfc5387",
+    "id": "24",
+    "title": "Wild West Cowhide Duffel Bag",
+    "description": "Discover the Wild West Cowhide Duffel Bag. Featuring a spacious travel bag featuring stunning natural cowhide, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "burgundy-executive-briefcase",
+    "image": "/images/uploads/1776555863803_WhatsAppImage2026-04-18at3.48.40PM.jpeg",
+    "images": [
+      "/images/24/wild-west-cowhide-duffel-bag-main.jpg",
+      "/images/24/wild-west-cowhide-duffel-bag-alt-3.jpg",
+      "/images/24/wild-west-cowhide-duffel-bag-alt-4.jpg",
+      "/images/24/wild-west-cowhide-duffel-bag-alt-5.jpg",
+      "/images/24/wild-west-cowhide-duffel-bag-alt-6.jpg",
+      "/images/uploads/1776555863803_WhatsAppImage2026-04-18at3.48.40PM.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "draft",
+    "createdAt": "2026-04-20T02:03:01.115Z",
+    "updatedAt": "2026-04-20T02:03:01.115Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc537a",
+    "id": "11",
+    "title": "Forest Green Leather Barrel Bag",
+    "description": "Discover the Forest Green Leather Barrel Bag. Featuring rich forest green genuine leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555466024_WhatsAppImage2026-04-18at3.48.40PM1.jpeg",
+    "images": [
+      "/images/11/forest-green-leather-barrel-bag-main.jpg",
+      "/images/11/forest-green-leather-barrel-bag-alt-1.jpg",
+      "/images/11/forest-green-leather-barrel-bag-alt-2.jpg",
+      "/images/uploads/1776555466024_WhatsAppImage2026-04-18at3.48.40PM1.jpeg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5381",
+    "id": "18",
+    "title": "Cognac Dream Leather Shoulder Bag",
+    "description": "Discover the Cognac Dream Leather Shoulder Bag. Featuring warm cognac orange genuine leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
     "image": "/images/uploads/1776555662589_WhatsAppImage2026-04-18at4.02.20PM.jpeg",
     "images": [
+      "/images/18/cognac-dream-leather-shoulder-bag-alt-2.jpg",
       "/images/uploads/1776555662589_WhatsAppImage2026-04-18at4.02.20PM.jpeg",
+      "https://res.cloudinary.com/di0vsaiqg/image/upload/v1776870171/craftlyaura/products/hihlcjjl1zkxnsgeiwzo.jpg",
+      "https://res.cloudinary.com/di0vsaiqg/image/upload/v1776870172/craftlyaura/products/werggubsjpq2fmgw3dcn.jpg"
+    ],
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.115Z",
+    "updatedAt": "2026-04-20T02:03:01.115Z",
+    "__v": 0
+  },
+  {
+    "_id": "69e589554a61b50bfdfc5384",
+    "id": "21",
+    "title": "Burgundy Executive Briefcase",
+    "description": "Discover the Burgundy Executive Briefcase. Featuring luxurious burgundy leather for the modern professional, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 130,
+    "category": "Leather Bag",
+    "image": "/images/uploads/1776555799866_WhatsAppImage2026-04-18at4.18.10PM1.jpeg",
+    "images": [
       "/images/21/burgundy-executive-briefcase-main.jpg",
       "/images/21/burgundy-executive-briefcase-alt-1.jpg",
       "/images/21/burgundy-executive-briefcase-alt-2.jpg",
@@ -808,143 +560,42 @@
       "/images/21/burgundy-executive-briefcase-alt-4.jpg",
       "/images/21/burgundy-executive-briefcase-alt-6.jpg",
       "/images/21/burgundy-executive-briefcase-alt-8.jpg",
-      "/images/21/burgundy-executive-briefcase-alt-9.jpg"
+      "/images/21/burgundy-executive-briefcase-alt-9.jpg",
+      "/images/uploads/1776555799866_WhatsAppImage2026-04-18at4.18.10PM1.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.115Z",
+    "updatedAt": "2026-04-20T02:03:01.115Z",
+    "__v": 0
   },
   {
-    "id": "22",
-    "title": "Authentic Moroccan Leather Barrel Bag - Onyx Black Duffel Barrel Set",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This onyx black duffel barrel set is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian travel bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
+    "_id": "69e589554a61b50bfdfc5380",
+    "id": "17",
+    "title": "Azure Blue Leather Tote",
+    "description": "Discover the Azure Blue Leather Tote. Featuring a spacious design in premium azure blue leather, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
     "price": 130,
     "category": "Leather Bag",
-    "slug": "onyx-black-duffel-barrel-set",
-    "image": "/images/uploads/1776555734782_WhatsAppImage2026-04-18at3.48.41PM3.jpeg",
+    "image": "/images/uploads/1776555633654_WhatsAppImage2026-04-18at4.18.09PM.jpeg",
     "images": [
-      "/images/uploads/1776555734782_WhatsAppImage2026-04-18at3.48.41PM3.jpeg",
-      "/images/22/onyx-black-duffel-barrel-set-main.jpg",
-      "/images/22/onyx-black-duffel-barrel-set-alt-1.jpg",
-      "/images/22/onyx-black-duffel-barrel-set-alt-2.jpg"
+      "/images/17/azure-blue-leather-tote-main.jpg",
+      "/images/17/azure-blue-leather-tote-alt-1.jpg",
+      "/images/17/azure-blue-leather-tote-alt-2.jpg",
+      "/images/17/azure-blue-leather-tote-alt-4.jpg",
+      "/images/17/azure-blue-leather-tote-alt-9.jpg",
+      "/images/17/azure-blue-leather-tote-alt-10.jpg",
+      "/images/17/azure-blue-leather-tote-alt-11.jpg",
+      "/images/uploads/1776555633654_WhatsAppImage2026-04-18at4.18.09PM.jpeg"
     ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "23",
-    "title": "Moroccan Artisan Leather Briefcase - Maroon Classic Leather",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This maroon classic leather briefcase is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian leather bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "maroon-classic-leather-briefcase",
-    "image": "/images/uploads/1776555774481_WhatsAppImage2026-04-18at3.48.41PM5.jpeg",
-    "images": [
-      "/images/uploads/1776555774481_WhatsAppImage2026-04-18at3.48.41PM5.jpeg",
-      "/images/23/maroon-classic-leather-briefcase-main.jpg",
-      "/images/23/maroon-classic-leather-briefcase-alt-1.jpg",
-      "/images/23/maroon-classic-leather-briefcase-alt-2.jpg",
-      "/images/23/maroon-classic-leather-briefcase-alt-3.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
-  },
-  {
-    "id": "24",
-    "title": "Eco-Friendly Genuine Leather Travel Duffel - Wild West Cowhide",
-    "description": "Greetings from the vibrant heart of the Moroccan Medina! As an artisan who has practiced traditional leatherworking for generations, I pour my soul into every single piece I create. This wild west cowhide duffel bag is not just an accessory; it is a piece of true Moroccan artisanat.\n\nMeticulously handmade using 100% premium, eco-friendly genuine leather and natural dyes, this bohemian travel bag carries the rich heritage and intricate craftsmanship of our culture. Every stitch is placed by hand with 'hub' (love) and immense attention to detail, ensuring it stands the test of time while aging beautifully.\n\nWhether you are looking to embrace a free-spirited bohemian aesthetic or appreciate sustainable, slow-fashion masterpieces, this bag is completely unique. Because it is genuinely handcrafted from natural materials, each piece carries its own distinct charm and texture—meaning nobody else in the world will own one exactly like yours.\n\n• 100% Authentic Handmade Moroccan Artisanat\n• Premium, Eco-Friendly Genuine Leather\n• Traditional Bohemian Design\n• Ethically crafted in our local workshop\n\nBring the warmth and authentic magic of Morocco into your everyday life with this timeless creation.",
-    "price": 130,
-    "category": "Leather Bag",
-    "slug": "wild-west-cowhide-duffel-bag",
-    "image": "/images/uploads/1776555799866_WhatsAppImage2026-04-18at4.18.10PM1.jpeg",
-    "images": [
-      "/images/uploads/1776555799866_WhatsAppImage2026-04-18at4.18.10PM1.jpeg",
-      "/images/24/wild-west-cowhide-duffel-bag-main.jpg",
-      "/images/24/wild-west-cowhide-duffel-bag-alt-1.jpg",
-      "/images/24/wild-west-cowhide-duffel-bag-alt-2.jpg",
-      "/images/24/wild-west-cowhide-duffel-bag-alt-3.jpg",
-      "/images/24/wild-west-cowhide-duffel-bag-alt-4.jpg",
-      "/images/24/wild-west-cowhide-duffel-bag-alt-5.jpg",
-      "/images/24/wild-west-cowhide-duffel-bag-alt-6.jpg",
-      "/images/24/wild-west-cowhide-duffel-bag-alt-7.jpg"
-    ],
-    "variationTypes": {
-      "Size": [
-        "Small",
-        "Medium",
-        "Large"
-      ]
-    },
-    "variations": [
-      {
-        "Size": "Small",
-        "price": 90
-      },
-      {
-        "Size": "Medium",
-        "price": 130
-      },
-      {
-        "Size": "Large",
-        "price": 190
-      }
-    ]
+    "tags": [],
+    "variants": [],
+    "inventory": 0,
+    "status": "active",
+    "createdAt": "2026-04-20T02:03:01.114Z",
+    "updatedAt": "2026-04-20T02:03:01.114Z",
+    "__v": 0
   },
   {
     "id": "25",
@@ -953,10 +604,13 @@
     "price": 69,
     "category": "Crossbody Bag - Women's",
     "slug": "alexandra-plum-royale-leather-barrel-bag",
-    "image": "/images/uploads/1777570469242-alexandra-plum-royale-leather-barrel-bag-main.jpg",
+    "image": "/images/uploads/1777583789961-alexandra-plum-royale-leather-barrel-bag-main.jpg",
     "images": [
-      "/images/uploads/1777570469242-alexandra-plum-royale-leather-barrel-bag-main.jpg",
-      "/images/uploads/1777570469242-alexandra-plum-royale-leather-barrel-bag-product-14220564401456356-508.jpg"
+      "/images/uploads/1777583789961-alexandra-plum-royale-leather-barrel-bag-main.jpg",
+      "/images/uploads/1777583789961-alexandra-plum-royale-leather-barrel-bag-product-613.jpg",
+      "/images/uploads/1777583789961-alexandra-plum-royale-leather-barrel-bag-product-614.jpg",
+      "/images/uploads/1777583789961-alexandra-plum-royale-leather-barrel-bag-product-615.jpg",
+      "/images/uploads/1777583789961-alexandra-plum-royale-leather-barrel-bag-product-616.jpg"
     ],
     "variationTypes": {
       "Size": [
@@ -978,21 +632,7 @@
         "Size": "Small",
         "price": 69
       }
-    ]
-  },
-  {
-    "id": "26",
-    "title": "Luxury Cow Print Leather Bag – Made in Morocco",
-    "description": "Discover this premium leather bag featuring a bold cow print design, combining modern elegance with Moroccan-inspired craftsmanship. Made from high-quality materials, this bag is designed to offer durability, style, and everyday functionality.\n\nThe black and white cow print adds a trendy, statement touch while remaining easy to pair with both chic and casual outfits. Its structured shape and spacious interior make it perfect for daily use, work, or short trips.\n\nAvailable in multiple sizes, this bag adapts to your lifestyle while maintaining a refined and sophisticated look. Strong handles and carefully crafted details reflect a modern take on traditional Moroccan artistry.\n\n✔️ Premium quality leather\n✔️ Trendy cow print design (black & white)\n✔️ Versatile style: casual, chic, or travel\n✔️ Durable and practical structure\n✔️ Inspired by Moroccan craftsmanship\n\nAdd a unique touch of luxury to your wardrobe with this standout piece, designed for women who value both style and practicality.",
-    "price": 75,
-    "category": "Handbags / Duffle Bags",
-    "slug": "luxury-cow-print-leather-bag-made-in-morocco",
-    "image": "/images/uploads/luxury-cow-print-leather-bag-made-in-morocco-main.jpg",
-    "images": [
-      "/images/uploads/luxury-cow-print-leather-bag-made-in-morocco-main.jpg",
-      "/images/uploads/luxury-cow-print-leather-bag-made-in-morocco-product-14220106432990868-475.jpg"
     ],
-    "variationTypes": {},
-    "variations": []
+    "status": "published"
   }
 ]
