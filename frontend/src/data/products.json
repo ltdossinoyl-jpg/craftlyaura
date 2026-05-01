@@ -652,5 +652,43 @@
     "variationTypes": {},
     "variations": [],
     "status": "published"
+  },
+  {
+    "id": "27",
+    "title": "Alexandra Plum Royale Leather Barrel Bag 2",
+    "description": "Discover the Alexandra Plum Royale Leather Barrel Bag. Featuring vibrant blue woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 73,
+    "category": "Crossbody Bag - Women's",
+    "slug": "alexandra-plum-royale-leather-barrel-bag-2",
+    "image": "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-main.jpg",
+    "images": [
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-main.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-product-15.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-product-17.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-product-19.jpg"
+    ],
+    "variationTypes": {
+      "Size": [
+        "M",
+        "L",
+        "Small"
+      ]
+    },
+    "variations": [
+      {
+        "Size": "M",
+        "price": 73
+      },
+      {
+        "Size": "L",
+        "price": 73
+      },
+      {
+        "Size": "Small",
+        "price": 73
+      }
+    ],
+    "driveFolderId": "1MUadP0amY7UOiuMsqLib-AAqIEph-ENj",
+    "driveFolderUrl": ""
   }
 ]
