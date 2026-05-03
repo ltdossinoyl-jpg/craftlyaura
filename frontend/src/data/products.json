@@ -634,5 +634,100 @@
       }
     ],
     "status": "published"
+  },
+  {
+    "id": "26",
+    "title": "Cowhide Leather Travel Bag Duffle Handmade",
+    "description": "This handmade cowhide leather travel bag combines luxury design with practical functionality. Crafted from genuine cowhide leather, each bag features a unique natural pattern, making every piece one of a kind.\n\nDesigned in a structured duffle style, it is perfect for travel, weekend getaways, or everyday use. The durable leather handles and secure zipper closure ensure both comfort and reliability, while the timeless design adds a refined statement to any look.\n\nAvailable in multiple sizes, making it ideal for boutiques offering versatile and high-quality travel accessories.\n\nEach bag is carefully handcrafted, highlighting authentic craftsmanship and premium materials.\n\nFeatures:\n\nGenuine cowhide leather (unique natural patterns)\nStructured duffle design\nDurable leather handles\nSecure zipper closure\nHandmade artisan product\n\nSizes:\n\nSmall: 20 x 13 x 12 cm\nMedium: 26 x 16 x 15 cm\nLarge: 45 x 25 x 25 cm",
+    "price": 5070105,
+    "category": "Bags & Purses → Travel Bags → Duffle Bags",
+    "slug": "cowhide-leather-travel-bag-duffle-handmade",
+    "image": "/images/uploads/1777588782518-cowhide-leather-travel-bag-duffle-handmade-main.jpg",
+    "images": [
+      "/images/uploads/1777588782518-cowhide-leather-travel-bag-duffle-handmade-main.jpg",
+      "/images/uploads/1777588782518-cowhide-leather-travel-bag-duffle-handmade-product-657.jpg",
+      "/images/uploads/1777588782518-cowhide-leather-travel-bag-duffle-handmade-product-659.jpg",
+      "/images/uploads/1777588782518-cowhide-leather-travel-bag-duffle-handmade-product-660.jpg"
+    ],
+    "variationTypes": {},
+    "variations": [],
+    "status": "published"
+  },
+  {
+    "id": "27",
+    "title": "Alexandra Plum Royale Leather Barrel Bag 2",
+    "description": "Discover the Alexandra Plum Royale Leather Barrel Bag. Featuring vibrant blue woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 73,
+    "category": "Crossbody Bag - Women's",
+    "slug": "alexandra-plum-royale-leather-barrel-bag-2",
+    "image": "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-main.jpg",
+    "images": [
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-main.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-product-15.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-product-17.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-2-product-19.jpg"
+    ],
+    "variationTypes": {
+      "Size": [
+        "M",
+        "L",
+        "Small"
+      ]
+    },
+    "variations": [
+      {
+        "Size": "M",
+        "price": 73
+      },
+      {
+        "Size": "L",
+        "price": 73
+      },
+      {
+        "Size": "Small",
+        "price": 73
+      }
+    ],
+    "driveFolderId": "1MUadP0amY7UOiuMsqLib-AAqIEph-ENj",
+    "driveFolderUrl": ""
+  },
+  {
+    "id": "28",
+    "title": "Alexandra Plum Royale Leather Barrel Bag 3",
+    "description": "Discover the Alexandra Plum Royale Leather Barrel Bag. Featuring vibrant blue woven patterns, this piece is truly one-of-a-kind. Crafted with 100% natural, high-quality leather, everything about this product is completely natural. It is 100% original—if you buy this, you won't find it anywhere else. Hand-made with 'hub' (love) and meticulous attention to detail, this bag is the perfect blend of durability and exquisite artistry.",
+    "price": 96,
+    "category": "Crossbody Bag - Women's",
+    "slug": "alexandra-plum-royale-leather-barrel-bag-3",
+    "image": "/images/uploads/alexandra-plum-royale-leather-barrel-bag-3-1777654364203-main.jpg",
+    "images": [
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-3-1777654364203-main.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-3-1777654364203-product-682.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-3-1777654364203-product-684.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-3-1777654364203-product-686.jpg",
+      "/images/uploads/alexandra-plum-royale-leather-barrel-bag-3-1777654364203-product-688.jpg"
+    ],
+    "variationTypes": {
+      "Size": [
+        "M",
+        "L",
+        "Small"
+      ]
+    },
+    "variations": [
+      {
+        "Size": "M",
+        "price": 96
+      },
+      {
+        "Size": "L",
+        "price": 96
+      },
+      {
+        "Size": "Small",
+        "price": 96
+      }
+    ],
+    "driveFolderId": "1LpQ_1Sn-kwiuODFmj3kfj7MrWbcGqalx",
+    "driveFolderUrl": ""
   }
 ]
