@@ -32,10 +32,19 @@ export async function POST(req: Request) {
             await Product.deleteMany({});
             await Product.insertMany(body);
             return NextResponse.json({ success: true, message: 'Products saved to MongoDB successfully' });
+        } else if (body && typeof body === 'object') {
+            // Single product upsert
+            const filter = body.slug ? { slug: body.slug } : (body.id ? { id: body.id } : null);
+            if (!filter) {
+                return NextResponse.json({ ok: false, error: "Missing 'slug' or 'id' for upsert", missingFields: ["slug", "id"] }, { status: 400 });
+            }
+            
+            // Perform upsert
+            await Product.findOneAndUpdate(filter, body, { upsert: true, new: true, setDefaultsOnInsert: true });
+            return NextResponse.json({ ok: true, message: 'Product upserted successfully' });
         }
 
-        return NextResponse.json({ error: 'Expected an array of products' }, { status: 400 });
-        return NextResponse.json({ error: 'Expected an array of products' }, { status: 400 });
+        return NextResponse.json({ ok: false, error: 'Expected an array of products or a single product object' }, { status: 400 });
     } catch (error) {
         console.error('Failed to save products to MongoDB, attempting local JSON fallback:', error);
         try {
