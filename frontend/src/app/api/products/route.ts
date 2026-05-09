@@ -92,6 +92,8 @@ export async function POST(req: Request) {
         price: variant?.price != null ? Number(variant.price) : undefined,
         sku: variant?.sku ? String(variant.sku) : undefined,
       })) : [],
+      variationTypes: product.variationTypes && typeof product.variationTypes === 'object' ? product.variationTypes : {},
+      variations: Array.isArray(product.variations) ? product.variations : [],
       inventory: product.inventory != null ? Number(product.inventory) : 0,
       status: product.status === 'draft' ? 'draft' : 'active',
     };

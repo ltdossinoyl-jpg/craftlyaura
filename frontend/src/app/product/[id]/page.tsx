@@ -151,7 +151,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
     // Variation types and state
     const variationTypes = (product as any).variationTypes as Record<string, string[]> | undefined;
-    const variations = (product as any).variations as Array<Record<string, string>> | undefined;
+    const variations = (product as any).variations as Array<Record<string, any>> | undefined;
     const hasVariations = variationTypes && Object.keys(variationTypes).length > 0;
 
     // Find the matching variation for the current selection
@@ -160,6 +160,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         return variations.find(v => {
             return Object.entries(selections).every(([key, value]) => v[key] === value);
         });
+    };
+
+    // Find variation by a single type/value pair (for showing per-option price)
+    const findVariationForOption = (typeName: string, value: string) => {
+        if (!variations) return null;
+        return variations.find(v => v[typeName] === value);
     };
 
     const handleVariationChange = (type: string, value: string) => {
@@ -178,7 +184,10 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     // Compute current price based on selected variation
     const currentVariation = hasVariations ? findMatchingVariation(selectedVariations) : null;
     const currentPrice = currentVariation?.price ? Number(currentVariation.price) : product.price;
-    const hasDifferentPrices = variations ? new Set(variations.map(v => v.price).filter(Boolean)).size > 1 : false;
+    const allPrices = variations ? variations.map(v => v.price).filter(Boolean).map(Number) : [];
+    const hasDifferentPrices = new Set(allPrices).size > 1;
+    const minPrice = allPrices.length > 0 ? Math.min(...allPrices) : product.price;
+    const maxPrice = allPrices.length > 0 ? Math.max(...allPrices) : product.price;
 
     const getProductForCart = () => ({
         ...product,
@@ -354,10 +363,15 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                             <p className={styles.outOfStockLabel}>Out of Stock</p>
                         ) : (
                             <div className={styles.priceBlock}>
-                                {hasDifferentPrices && !currentVariation?.price && (
-                                    <span className={styles.priceFrom}>From </span>
+                                {hasDifferentPrices && !currentVariation?.price ? (
+                                    <>
+                                        <span className={styles.price}>${Number(minPrice).toFixed(2)}</span>
+                                        <span className={styles.priceSeparator}> – </span>
+                                        <span className={styles.price}>${Number(maxPrice).toFixed(2)}</span>
+                                    </>
+                                ) : (
+                                    <span className={styles.price}>${Number(currentPrice || 0).toFixed(2)}</span>
                                 )}
-                                <span className={styles.price}>${Number(currentPrice || 0).toFixed(2)}</span>
                             </div>
                         )}
 
@@ -372,22 +386,26 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                         <div className={styles.variationOptions}>
                                             {values.map((value) => {
                                                 const isSelected = selectedVariations[typeName] === value;
-                                                // Check if this variation has an associated image (for color swatches)
-                                                const matchedVar = variations?.find(v => v[typeName] === value);
+                                                const matchedVar = findVariationForOption(typeName, value);
                                                 const hasImage = matchedVar?.image;
+                                                const varPrice = matchedVar?.price ? Number(matchedVar.price) : null;
 
                                                 return (
                                                     <button
                                                         key={value}
-                                                        className={`${styles.variationBtn} ${isSelected ? styles.variationBtnActive : ''} ${hasImage ? styles.variationBtnSwatch : ''}`}
+                                                        className={`${styles.variationBtn} ${isSelected ? styles.variationBtnActive : ''} ${hasImage ? styles.variationBtnWithImage : ''}`}
                                                         onClick={() => handleVariationChange(typeName, value)}
                                                         title={value}
                                                     >
-                                                        {hasImage ? (
-                                                            <img src={hasImage} alt={value} className={styles.variationSwatchImg} />
-                                                        ) : (
-                                                            <span>{value}</span>
+                                                        {hasImage && (
+                                                            <img src={hasImage} alt={value} className={styles.variationThumbImg} />
                                                         )}
+                                                        <span className={styles.variationBtnContent}>
+                                                            <span className={styles.variationBtnLabel}>{value}</span>
+                                                            {varPrice != null && hasDifferentPrices && (
+                                                                <span className={styles.variationBtnPrice}>${varPrice.toFixed(2)}</span>
+                                                            )}
+                                                        </span>
                                                     </button>
                                                 );
                                             })}

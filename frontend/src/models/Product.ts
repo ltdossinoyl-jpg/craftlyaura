@@ -17,6 +17,8 @@ export interface IProduct extends Document {
     price?: number;
     sku?: string;
   }>;
+  variationTypes?: Record<string, string[]>;
+  variations?: Array<Record<string, any>>;
   inventory?: number;
   status?: string;
   createdAt?: Date;
@@ -40,6 +42,8 @@ const ProductSchema = new Schema<IProduct>({
     price: Number,
     sku: String,
   }],
+  variationTypes: { type: Schema.Types.Mixed, default: {} },
+  variations: { type: [Schema.Types.Mixed], default: [] },
   inventory: { type: Number, default: 0 },
   status: { type: String, default: 'active' },
 }, {
