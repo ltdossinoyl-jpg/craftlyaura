@@ -47,6 +47,7 @@ export default function ProductCard({ product, index }: { product: Product; inde
                             className={`${styles.primaryImage} ${product.images && product.images.length > 1 ? styles.hasSecondary : ''} ${product.outOfStock ? styles.outOfStockImage : ''}`}
                             fill
                             sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                            unoptimized
                         />
                         {product.images && product.images.length > 1 && !product.outOfStock && (
                             <Image
@@ -55,6 +56,7 @@ export default function ProductCard({ product, index }: { product: Product; inde
                                 className={styles.secondaryImage}
                                 fill
                                 sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                                unoptimized
                             />
                         )}
                     </Link>

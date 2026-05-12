@@ -109,6 +109,7 @@ export default function SalesNotification() {
                             width={60}
                             height={60}
                             className={styles.productImage}
+                            unoptimized
                         />
                     </div>
                     <div className={styles.text}>
