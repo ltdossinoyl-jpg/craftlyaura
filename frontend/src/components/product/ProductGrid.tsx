@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import ProductImage from '@/components/ProductImage';
 import Link from 'next/link';
 
 // Using Supabase generated types
@@ -49,13 +49,12 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                             } ${isTall ? 'md:row-span-2' : ''}`}
                     >
                         <Link href={`/product/${product.id}`} className="block w-full h-full">
-                            <Image
-                                src={product.images[0] || '/placeholder.png'}
+                            <ProductImage
+                                src={product.images[0] || '/images/placeholder.svg'}
                                 alt={product.name}
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                unoptimized
                             />
 
                             {/* Gradient Overlay for Text Readability */}

@@ -322,11 +322,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     <div className={styles.leftColumn}>
                         <div className={styles.imageGallery}>
                             <img
-                                src={mainImage || '/placeholder.png'}
+                                src={mainImage || '/images/placeholder.svg'}
                                 alt={product.title || 'Product Image'}
                                 className={styles.mainImage}
                                 onClick={() => setIsLightboxOpen(true)}
                                 style={{ cursor: 'zoom-in' }}
+                                onError={(e) => { (e.target as HTMLImageElement).src = '/images/placeholder.svg'; }}
                             />
 
                             {images.length > 1 && (
@@ -338,7 +339,13 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                             onClick={() => setMainImage(img)}
                                             aria-label={`View image ${idx + 1}`}
                                         >
-                                            <img src={img} alt={`${product.title} alternate view ${idx + 1}`} className={styles.thumbnailImg} loading="lazy" />
+                                            <img
+                                                src={img}
+                                                alt={`${product.title} alternate view ${idx + 1}`}
+                                                className={styles.thumbnailImg}
+                                                loading="lazy"
+                                                onError={(e) => { (e.target as HTMLImageElement).src = '/images/placeholder.svg'; }}
+                                            />
                                         </button>
                                     ))}
                                 </div>

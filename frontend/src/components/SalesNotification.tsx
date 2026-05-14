@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import ProductImage from './ProductImage';
 import Link from 'next/link';
 import productsData from '../data/products.json';
 import styles from './SalesNotification.module.css';
@@ -103,13 +103,12 @@ export default function SalesNotification() {
             <Link href={`/product/${currentSale.product.id}`} className={styles.linkWrapper}>
                 <div className={styles.content}>
                     <div className={styles.imageWrapper}>
-                        <Image
+                        <ProductImage
                             src={currentSale.product.image}
                             alt={currentSale.product.title || "Product"}
                             width={60}
                             height={60}
                             className={styles.productImage}
-                            unoptimized
                         />
                     </div>
                     <div className={styles.text}>

@@ -60,7 +60,7 @@ export default function CartPopup() {
                                     return (
                                         <div key={cId} className={styles.cartItem}>
                                             <div className={styles.itemImageWrapper}>
-                                                <img src={item.image} alt={item.title} className={styles.itemImage} />
+                                                <img src={item.image} alt={item.title} className={styles.itemImage} onError={(e) => { (e.target as HTMLImageElement).src = '/images/placeholder.svg'; }} />
                                             </div>
                                             <div className={styles.itemDetails}>
                                                 <div className={styles.itemHeader}>

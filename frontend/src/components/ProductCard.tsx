@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
+import ProductImage from './ProductImage';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
@@ -41,22 +41,20 @@ export default function ProductCard({ product, index }: { product: Product; inde
             <div className={`${styles.productCard} fade-in`} style={{ animationDelay: `${(index % 20) * 0.05}s` }}>
                 <div className={styles.imageWrapper}>
                     <Link href={`/product/${product.slug || product.id}`} className={styles.imageLink} style={{ position: 'relative', display: 'block', width: '100%', height: '100%' }}>
-                        <Image
+                        <ProductImage
                             src={product.image}
                             alt={product.title}
                             className={`${styles.primaryImage} ${product.images && product.images.length > 1 ? styles.hasSecondary : ''} ${product.outOfStock ? styles.outOfStockImage : ''}`}
                             fill
                             sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-                            unoptimized
                         />
                         {product.images && product.images.length > 1 && !product.outOfStock && (
-                            <Image
+                            <ProductImage
                                 src={product.images[1]}
                                 alt={product.title}
                                 className={styles.secondaryImage}
                                 fill
                                 sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
-                                unoptimized
                             />
                         )}
                     </Link>
