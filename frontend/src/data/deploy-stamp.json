@@ -1,6 +1,12 @@
 {
-  "lastPublishedAt": "2026-05-12T00:30:09.977Z",
-  "productSlug": "moroccan-straw-basket-bag-with-hand-stitched-leather-straps",
-  "productTitle": "Moroccan Straw Basket Bag with Hand-Stitched Leather Straps",
-  "note": "Updated by n8n to trigger one final Vercel deploy after image commits."
+  "lastPublishedAt": "2026-07-13T17:59:35.828Z",
+  "productSlug": "black-moroccan-kaftan-with-gold-embroidery",
+  "productTitle": "Black Moroccan Kaftan with Gold Embroidery",
+  "images": [
+    "https://handhapiness.vercel.app/images/uploads/black-moroccan-kaftan-with-gold-embroidery-1783965063557-axlezg-main.png",
+    "https://handhapiness.vercel.app/images/uploads/black-moroccan-kaftan-with-gold-embroidery-1783965063557-axlezg-product-14271721669635148-5155.png",
+    "https://handhapiness.vercel.app/images/uploads/black-moroccan-kaftan-with-gold-embroidery-1783965063557-axlezg-product-14271721669635148-5156.png",
+    "https://handhapiness.vercel.app/images/uploads/black-moroccan-kaftan-with-gold-embroidery-1783965063557-axlezg-product-14271721669635148-5157.png"
+  ],
+  "note": "Trigger CraftlyAura deployment after Handhapiness wait finished."
 }
