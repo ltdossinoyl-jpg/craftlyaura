@@ -3,9 +3,41 @@ const express = require('express');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
+const nodemailer = require('nodemailer');
 
 const SessionManager = require('./sessionManager');
 const setupAI = require('./ai');
+
+// ── Email Transporter (Gmail SMTP – free) ──
+const emailTransporter = process.env.SMTP_USER && process.env.SMTP_PASS
+    ? nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASS,
+        },
+    })
+    : null;
+
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || process.env.SMTP_USER || '';
+
+async function sendAdminEmail(subject, htmlBody) {
+    if (!emailTransporter || !ADMIN_EMAIL) {
+        console.log('[Email] Skipped – SMTP not configured');
+        return;
+    }
+    try {
+        await emailTransporter.sendMail({
+            from: `"Craftly Aura" <${process.env.SMTP_USER}>`,
+            to: ADMIN_EMAIL,
+            subject,
+            html: htmlBody,
+        });
+        console.log(`[Email] Sent: ${subject}`);
+    } catch (err) {
+        console.error('[Email] Failed:', err.message);
+    }
+}
 
 const app = express();
 app.use(cors({ origin: "*" }));
@@ -139,7 +171,7 @@ app.post('/chat/send', async (req, res) => {
     }
 
     // Professional WhatsApp Message Format
-    const adminLog = `💬 *HANDMADE BESTSELLER - New Chat*
+    const adminLog = `💬 *CRAFTLY AURA - New Chat*
 ━━━━━━━━━━━━━━━━━━━━━
 👤 *Client*: ${userName || 'Unknown'}
 📧 *Email*: ${userEmail || 'Not provided'}
@@ -151,6 +183,19 @@ ${text}
 ${aiReply ? `🤖 *AI Response*: \n${aiReply}` : (isAIEnabled ? '🤖 *AI status*: _AI failed to respond_' : '🤖 *AI status*: _AI Disabled_')}
 ━━━━━━━━━━━━━━━━━━━━━
 _Reply to this message to continue the chat._`;
+
+    // Email notification
+    sendAdminEmail(
+        `💬 New Chat from ${userName || 'Unknown'}`,
+        `<h2>💬 Craftly Aura – New Chat Message</h2>
+        <p><strong>Client:</strong> ${userName || 'Unknown'}</p>
+        <p><strong>Email:</strong> ${userEmail || 'Not provided'}</p>
+        <p><strong>Session:</strong> ${sessionId}</p>
+        <hr/>
+        <p><strong>Message:</strong></p>
+        <blockquote style="border-left:3px solid #c9a96e;padding:10px;background:#faf8f5;">${text}</blockquote>
+        ${aiReply ? `<p><strong>AI Response:</strong></p><blockquote style="border-left:3px solid #4a90d9;padding:10px;background:#f0f5ff;">${aiReply}</blockquote>` : ''}`
+    );
 
     // ADDED: Store in history
     history.addMessage(sessionId, { text, sender: 'user', timestamp: Date.now() });
@@ -176,7 +221,7 @@ app.post('/chat/close', async (req, res) => {
 
     console.log(`[Chat Closed] [${sessionId}] from ${userName || 'Anonymous'}`);
 
-    const adminLog = `🚫 *HANDMADE BESTSELLER - Chat Closed*
+    const adminLog = `🚫 *CRAFTLY AURA - Chat Closed*
 ━━━━━━━━━━━━━━━━━━━━━
 👤 *Client*: ${userName || 'Unknown'}
 🆔 *Session*: ${sessionId}
@@ -200,7 +245,7 @@ app.post('/contact/send', async (req, res) => {
 
     console.log(`Contact Form: ${name} <${email}>`);
 
-    const adminLog = `📬 *HANDMADE BESTSELLER - Contact Form*
+    const adminLog = `📬 *CRAFTLY AURA - Contact Form*
 ━━━━━━━━━━━━━━━━━━━━━
 👤 *Client*: ${name}
 📧 *Email*: ${email}
@@ -211,6 +256,18 @@ ${message}
 _Reply directly via email to the client._`;
 
     await manager.broadcastToAdmins(adminLog);
+
+    // Email notification
+    sendAdminEmail(
+        `📬 Contact Form – ${name}`,
+        `<h2>📬 Craftly Aura – Contact Form</h2>
+        <p><strong>Client:</strong> ${name}</p>
+        <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <hr/>
+        <p><strong>Message:</strong></p>
+        <blockquote style="border-left:3px solid #c9a96e;padding:10px;background:#faf8f5;white-space:pre-wrap;">${message}</blockquote>
+        <p style="color:#888;font-size:12px;">Reply directly to the client at ${email}</p>`
+    );
 
     res.json({ success: true });
 });
@@ -224,7 +281,7 @@ app.post('/notify/stock', async (req, res) => {
 
     console.log(`Stock Notification: ${email} wants to be notified for "${productName}"`);
 
-    const adminLog = `🔔 *HANDMADE BESTSELLER - Stock Notification Request*
+    const adminLog = `🔔 *CRAFTLY AURA - Stock Notification Request*
 ━━━━━━━━━━━━━━━━━━━━━
 📦 *Product*: ${productName}
 🆔 *Product ID*: ${productId || 'N/A'}
@@ -233,6 +290,17 @@ app.post('/notify/stock', async (req, res) => {
 _Client wants to be notified when this product is back in stock._`;
 
     await manager.broadcastToAdmins(adminLog);
+
+    // Email notification
+    sendAdminEmail(
+        `🔔 Stock Alert – ${productName}`,
+        `<h2>🔔 Craftly Aura – Stock Notification Request</h2>
+        <p><strong>Product:</strong> ${productName}</p>
+        <p><strong>Product ID:</strong> ${productId || 'N/A'}</p>
+        <p><strong>Client Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <hr/>
+        <p style="color:#888;">Client wants to be notified when this product is back in stock.</p>`
+    );
 
     res.json({ success: true });
 });
