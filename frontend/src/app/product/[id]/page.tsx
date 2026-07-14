@@ -8,6 +8,7 @@ import React, { useState, useEffect } from 'react';
 import ProductCard from '@/components/ProductCard';
 import dynamic from 'next/dynamic';
 import NotifyMePopup from '@/components/NotifyMePopup';
+import { getRetailPrice } from '@/utils/pricing';
 
 const ImageLightbox = dynamic(() => import('@/components/ImageLightbox'), { ssr: false });
 
@@ -182,12 +183,15 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     const isOutOfStock = !!(product as any).outOfStock;
 
     // Compute current price based on selected variation
+    // DB prices are wholesale — retail = wholesale × 2
     const currentVariation = hasVariations ? findMatchingVariation(selectedVariations) : null;
-    const currentPrice = currentVariation?.price ? Number(currentVariation.price) : product.price;
-    const allPrices = variations ? variations.map(v => v.price).filter(Boolean).map(Number) : [];
+    const currentWholesalePrice = currentVariation?.price ? Number(currentVariation.price) : product.price;
+    const currentPrice = getRetailPrice(currentWholesalePrice);
+    const allWholesalePrices = variations ? variations.map(v => v.price).filter(Boolean).map(Number) : [];
+    const allPrices = allWholesalePrices.map(getRetailPrice);
     const hasDifferentPrices = new Set(allPrices).size > 1;
-    const minPrice = allPrices.length > 0 ? Math.min(...allPrices) : product.price;
-    const maxPrice = allPrices.length > 0 ? Math.max(...allPrices) : product.price;
+    const minPrice = allPrices.length > 0 ? Math.min(...allPrices) : getRetailPrice(product.price);
+    const maxPrice = allPrices.length > 0 ? Math.max(...allPrices) : getRetailPrice(product.price);
 
     const getProductForCart = () => ({
         ...product,
@@ -369,17 +373,48 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                         {isOutOfStock ? (
                             <p className={styles.outOfStockLabel}>Out of Stock</p>
                         ) : (
-                            <div className={styles.priceBlock}>
-                                {hasDifferentPrices && !currentVariation?.price ? (
-                                    <>
-                                        <span className={styles.price}>${Number(minPrice).toFixed(2)}</span>
-                                        <span className={styles.priceSeparator}> – </span>
-                                        <span className={styles.price}>${Number(maxPrice).toFixed(2)}</span>
-                                    </>
-                                ) : (
-                                    <span className={styles.price}>${Number(currentPrice || 0).toFixed(2)}</span>
-                                )}
-                            </div>
+                            <>
+                                <div className={styles.priceBlock}>
+                                    {hasDifferentPrices && !currentVariation?.price ? (
+                                        <>
+                                            <span className={styles.price}>${Number(minPrice).toFixed(2)}</span>
+                                            <span className={styles.priceSeparator}> – </span>
+                                            <span className={styles.price}>${Number(maxPrice).toFixed(2)}</span>
+                                        </>
+                                    ) : (
+                                        <span className={styles.price}>${Number(currentPrice || 0).toFixed(2)}</span>
+                                    )}
+                                </div>
+
+                                {/* Locked Wholesale Price */}
+                                <div className={styles.wholesaleBlock}>
+                                    <div className={styles.wholesaleRow}>
+                                        <div className={styles.wholesaleLabelGroup}>
+                                            <svg className={styles.lockIcon} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                                                <line x1="7" y1="7" x2="7.01" y2="7" />
+                                            </svg>
+                                            <span className={styles.wholesaleLabel}>Wholesale Price</span>
+                                        </div>
+                                        <span className={styles.wholesalePriceLocked}>
+                                            <span className={styles.wholesalePrice}>${Number(currentWholesalePrice || 0).toFixed(2)}</span>
+                                        </span>
+                                    </div>
+                                    <Link 
+                                        href={`/contact?message=${encodeURIComponent(
+                                            `Hello,\n\nI am interested in placing a wholesale order for the "${product.title}"${
+                                                hasVariations ? ` with selected options: ${Object.entries(selectedVariations).map(([k, v]) => `${k}: ${v}`).join(', ')}` : ''
+                                            }.\n\nProduct link: https://craftlyaura.com/product/${product.slug || product.id}\n\nThe listed wholesale price is $${Number(currentWholesalePrice || 0).toFixed(2)} per unit.\n\nPlease contact me with details regarding minimum order quantities, shipping, and terms.\n\nThank you.`
+                                        )}`} 
+                                        className={styles.wholesaleUnlockBtn}
+                                    >
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                        </svg>
+                                        Inquire / Order Wholesale
+                                    </Link>
+                                </div>
+                            </>
                         )}
 
                         {/* Variation Selectors */}
@@ -395,7 +430,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                                 const isSelected = selectedVariations[typeName] === value;
                                                 const matchedVar = findVariationForOption(typeName, value);
                                                 const hasImage = matchedVar?.image;
-                                                const varPrice = matchedVar?.price ? Number(matchedVar.price) : null;
+                                                const varWholesalePrice = matchedVar?.price ? Number(matchedVar.price) : null;
+                                                const varRetailPrice = varWholesalePrice != null ? getRetailPrice(varWholesalePrice) : null;
 
                                                 return (
                                                     <button
@@ -409,8 +445,8 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                                         )}
                                                         <span className={styles.variationBtnContent}>
                                                             <span className={styles.variationBtnLabel}>{value}</span>
-                                                            {varPrice != null && hasDifferentPrices && (
-                                                                <span className={styles.variationBtnPrice}>${varPrice.toFixed(2)}</span>
+                                                            {varRetailPrice != null && hasDifferentPrices && (
+                                                                <span className={styles.variationBtnPrice}>${varRetailPrice.toFixed(2)}</span>
                                                             )}
                                                         </span>
                                                     </button>

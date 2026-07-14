@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import styles from './FeaturedProductCard.module.css';
+import { getRetailPrice } from '@/utils/pricing';
 
 interface FeaturedProduct {
     id: string;
@@ -21,7 +22,7 @@ export default function FeaturedProductCard({ product, index }: { product: Featu
                 <Link href={`/product/${product.slug || product.id}`}>
                     <h3 className={styles.productTitle}>{product.title}</h3>
                 </Link>
-                <div className={styles.productPrice}>${product.price.toFixed(2)}</div>
+                <div className={styles.productPrice}>${getRetailPrice(product.price).toFixed(2)}</div>
                 <div className={styles.actions}>
                     <Link href={`/product/${product.slug || product.id}`} className={styles.btnChooseOption}>
                         Choose your option

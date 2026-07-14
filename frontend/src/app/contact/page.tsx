@@ -5,6 +5,15 @@ import styles from './Contact.module.css';
 
 export default function ContactPage() {
     const [status, setStatus] = useState<null | 'sending' | 'success' | 'error'>(null);
+    const [defaultMessage, setDefaultMessage] = useState('');
+
+    React.useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const params = new URLSearchParams(window.location.search);
+            const msg = params.get('message') || '';
+            setDefaultMessage(msg);
+        }
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -27,6 +36,7 @@ export default function ContactPage() {
 
             if (response.ok) {
                 setStatus('success');
+                setDefaultMessage('');
                 (e.target as HTMLFormElement).reset();
             } else {
                 setStatus('error');
@@ -93,7 +103,15 @@ export default function ContactPage() {
                                     </div>
                                     <div className={styles.inputGroup}>
                                         <label htmlFor="message">Message</label>
-                                        <textarea id="message" name="message" required rows={5} placeholder="How can we help you?"></textarea>
+                                        <textarea 
+                                            id="message" 
+                                            name="message" 
+                                            required 
+                                            rows={5} 
+                                            placeholder="How can we help you?"
+                                            value={defaultMessage}
+                                            onChange={(e) => setDefaultMessage(e.target.value)}
+                                        ></textarea>
                                     </div>
                                     <button type="submit" disabled={status === 'sending'} className={styles.submitBtn}>
                                         {status === 'sending' ? 'Sending...' : 'Send Message'}

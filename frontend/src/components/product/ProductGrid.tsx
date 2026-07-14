@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import ProductImage from '@/components/ProductImage';
 import Link from 'next/link';
+import { getRetailPrice } from '@/utils/pricing';
 
 // Using Supabase generated types
 type Product = {
@@ -66,7 +67,7 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                                     {product.name}
                                 </h3>
                                 <p className="text-gray-200 text-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    ${product.price.toFixed(2)}
+                                    ${getRetailPrice(product.price).toFixed(2)}
                                 </p>
 
                                 {/* Quick Add Button (Visual) */}

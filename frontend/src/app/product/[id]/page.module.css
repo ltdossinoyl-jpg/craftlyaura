@@ -940,3 +940,114 @@
         font-size: 0.62rem;
     }
 }
+
+/* ==========================================
+   Wholesale Locked Price Block
+   ========================================== */
+.wholesaleBlock {
+    background: var(--secondary);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.wholesaleBlock::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--primary);
+}
+
+.wholesaleRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.wholesaleLabelGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lockIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.wholesaleLabel {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--foreground);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.wholesalePriceLocked {
+    position: relative;
+}
+
+.wholesalePrice {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--foreground);
+    user-select: text;
+}
+
+.wholesaleUnlockBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.wholesaleUnlockBtn:hover {
+    background: transparent;
+    color: var(--primary);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    .wholesaleBlock {
+        padding: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .wholesaleLabel {
+        font-size: 0.75rem;
+    }
+
+    .wholesalePrice {
+        font-size: 1.05rem;
+    }
+
+    .wholesaleUnlockBtn {
+        font-size: 0.72rem;
+        padding: 0.65rem 0.75rem;
+        border-radius: var(--radius);
+    }
+}

@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import NotifyMePopup from './NotifyMePopup';
 import styles from './ProductCard.module.css';
+import { getRetailPrice } from '@/utils/pricing';
 
 import { Product } from '@/types';
 
@@ -15,18 +16,20 @@ export default function ProductCard({ product, index }: { product: Product; inde
     const router = useRouter();
     const [showNotify, setShowNotify] = useState(false);
 
+    const retailPrice = getRetailPrice(product.price);
+
     const handleAddToCart = (e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
         if (product.outOfStock) return;
-        addItem(product);
+        addItem({ ...product, price: retailPrice });
     };
 
     const handleBuyNow = (e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
         if (product.outOfStock) return;
-        addItem(product);
+        addItem({ ...product, price: retailPrice });
         router.push('/checkout');
     };
 
@@ -119,7 +122,11 @@ export default function ProductCard({ product, index }: { product: Product; inde
                         ) : (
                             <>
                                 <span className={styles.priceFrom}>From</span>
-                                <span className={styles.productPrice}>${product.price.toFixed(2)}</span>
+                                <span className={styles.productPrice}>${retailPrice.toFixed(2)}</span>
+                                <Link href="/contact" className={styles.wholesaleBadge} onClick={(e) => e.stopPropagation()}>
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+                                    Wholesale
+                                </Link>
                             </>
                         )}
                     </div>

@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import settingsData from '@/data/settings.json';
 import styles from './Navbar.module.css';
+import { getRetailPrice } from '@/utils/pricing';
 
 interface NavbarProps {
     megaMenuProducts: Record<string, any[]>;
@@ -232,7 +233,7 @@ export default function Navbar({ megaMenuProducts = {} }: NavbarProps) {
                                                         <img src={product.image} alt={product.title} />
                                                     </div>
                                                     <p className={styles.megaMenuProductName}>{product.title}</p>
-                                                    <p className={styles.megaMenuProductPrice}>${product.price.toFixed(2)}</p>
+                                                    <p className={styles.megaMenuProductPrice}>${getRetailPrice(product.price).toFixed(2)}</p>
                                                 </Link>
                                             ))}
                                             {(!megaMenuProducts[activeMegaMenuCategory.slug] || megaMenuProducts[activeMegaMenuCategory.slug].length === 0) && (
