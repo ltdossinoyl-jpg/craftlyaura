@@ -68,7 +68,17 @@ async function setupWhatsApp(io, ai, authPath, onQRUpdate, history) {
             if (!textMsg) return;
 
             // Don't process our own notification messages (avoid loops)
-            if (textMsg.includes('HANDMADE BESTSELLER') && msg.key.fromMe) return;
+            // Check for ANY notification pattern — don't rely on fromMe (unreliable in multi-device)
+            const isNotification = textMsg.includes('CRAFTLY AURA') || 
+                                   textMsg.includes('━━━━━') ||
+                                   (textMsg.includes('*Client*:') && textMsg.includes('*Message*:'));
+            if (isNotification) {
+                console.log('[WA Relayer] Skipped notification message (not relaying to user)');
+                return;
+            }
+
+            // Skip our own outgoing messages entirely
+            if (msg.key.fromMe) return;
 
             let sessionId = null;
             let replyText = textMsg;
@@ -94,6 +104,8 @@ async function setupWhatsApp(io, ai, authPath, onQRUpdate, history) {
                 replyText = textMsg.replace(sessionRegex, '').trim();
             } else if (quotedSessionMatch) {
                 sessionId = quotedSessionMatch[1];
+                // When replying to a quoted notification, the replyText is the admin's actual typed reply
+                // (textMsg is already just what the admin typed, not the quoted content)
             }
 
             if (sessionId && replyText) {
@@ -107,7 +119,7 @@ async function setupWhatsApp(io, ai, authPath, onQRUpdate, history) {
                 });
 
                 io.to(sessionId).emit('receive_message', msgData);
-            } else if (!textMsg.includes('HANDMADE BESTSELLER')) {
+            } else {
                 console.log(`[WA Relayer] No session ID found. Quoted: ${!!quotedText}`);
                 if (quotedText) {
                     console.log(`[WA DEBUG] Quoted Text Content: "${quotedText.substring(0, 100)}..."`);
